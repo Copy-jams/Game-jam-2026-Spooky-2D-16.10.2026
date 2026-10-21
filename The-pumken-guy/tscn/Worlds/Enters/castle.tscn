@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://calpnwwygnd15"]
+
+[ext_resource type="Script" uid="uid://dheim1feit1s0" path="res://scripts/Control scripts/enter_to_location.gd" id="1_f55xt"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lv26u"]
+load_path = "res://.godot/imported/map_building_icons.png-e14b4fc29a0cad51676e5609f5a0e803.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4d5f6"]
+atlas = SubResource("CompressedTexture2D_lv26u")
+region = Rect2(37, 1, 21, 27)
+
+[node name="Castle" type="Node2D" unique_id=479340426]
+texture_filter = 1
+scale = Vector2(4, 4)
+script = ExtResource("1_f55xt")
+
+[node name="Button" type="Button" parent="." unique_id=189747399]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.5
+offset_top = -18.5
+offset_right = 17.5
+offset_bottom = 18.5
+grow_horizontal = 2
+grow_vertical = 2
+icon = SubResource("AtlasTexture_4d5f6")
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

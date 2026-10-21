@@ -1,0 +1,210 @@
+[gd_scene format=3 uid="uid://b6lx1spy17dcg"]
+
+[ext_resource type="Script" uid="uid://w1ux4pxexebb" path="res://scripts/Units/Friend/playerUnit.gd" id="1_6445x"]
+[ext_resource type="Texture2D" uid="uid://cd0wcv67a4yup" path="res://assets/units/friends/ghost/ghost_idle+attack.png" id="2_jgud6"]
+[ext_resource type="AudioStream" uid="uid://be2cvkqb7o3n8" path="res://assets/Sounds/Sound effects/Coin01.mp3" id="3_6a57l"]
+
+[sub_resource type="Animation" id="Animation_jgud6"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.15, 0, 0.15, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.15, 0, 0.15, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/AnimatedSprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_65npu"]
+resource_name = "attack"
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 9.015, -0.03332831, 0, 0.1166717, 0, -8.539, -0.05009386, 0.6451096, 0.06657784, -0.8573905, 0, -0.15, 0, 0, 0),
+"times": PackedFloat32Array(0.2, 0.49943686, 0.76666665, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.03332831, 0, 0.1166717, 0, 0, -0.05009386, 0, 0.06657784, 0, 0, -0.15, 0, 0, 0),
+"times": PackedFloat32Array(0.2, 0.49943686, 0.76666665, 1)
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/AnimatedSprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.6, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/AnimatedSprite2D:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"attack"]
+}
+
+[sub_resource type="Animation" id="Animation_6a57l"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.15, 0, 0.15, 0, 0, -0.025000002, 0, 0.025000002, 0, 0, -0.050000004, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.15, 0, 0.15, 0, -5, -0.025000002, 0, 0.025000002, 0, 0, -0.050000004, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/AnimatedSprite2D:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_65npu"]
+_data = {
+&"RESET": SubResource("Animation_jgud6"),
+&"attack": SubResource("Animation_65npu"),
+&"idle": SubResource("Animation_6a57l")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6a57l"]
+atlas = ExtResource("2_jgud6")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_65npu"]
+atlas = ExtResource("2_jgud6")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k3a6j"]
+atlas = ExtResource("2_jgud6")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3xd07"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6a57l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_65npu")
+}],
+"loop": 1,
+"name": &"attack",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k3a6j")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 0.0
+}]
+
+[node name="Ghost" type="CharacterBody2D" unique_id=849130718 node_paths=PackedStringArray("navigationAgent", "targetPosition", "animationPlayer", "body", "SoundPlayer")]
+scale = Vector2(4, 4)
+script = ExtResource("1_6445x")
+speed = 500
+attackDamage = 1.5
+attackTimeout = 1.0
+protection = 0.0
+corpses = 0
+armorNeededForUpgrades = 0
+soulsNeededForUpgrades = 0
+navigationAgent = NodePath("NavigationAgent2D")
+targetPosition = NodePath("Node/Target")
+animationPlayer = NodePath("AnimationPlayer")
+body = NodePath("Node2D")
+SoundPlayer = NodePath("Player")
+metadata/_custom_type_script = "uid://w1ux4pxexebb"
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1491215385]
+
+[node name="Node" type="Node" parent="." unique_id=678763080]
+
+[node name="Target" type="Marker2D" parent="Node" unique_id=2067381626]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1678793875]
+libraries/ = SubResource("AnimationLibrary_65npu")
+autoplay = &"idle"
+
+[node name="Node2D" type="Node2D" parent="." unique_id=150898182]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D" unique_id=644739336]
+texture_filter = 1
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_3xd07")
+animation = &"attack"
+autoplay = "default"
+frame = 1
+
+[node name="Player" type="AudioStreamPlayer2D" parent="." unique_id=1592322636]
+stream = ExtResource("3_6a57l")

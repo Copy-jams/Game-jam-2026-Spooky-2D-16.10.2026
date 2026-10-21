@@ -1,0 +1,164 @@
+[gd_scene format=3 uid="uid://cfbv151fc2pfc"]
+
+[ext_resource type="Script" uid="uid://seqe3iovmyu6" path="res://scripts/Units/Enemis/enemyUnit.gd" id="1_0dcsm"]
+[ext_resource type="Texture2D" uid="uid://b3xbnteemsqf1" path="res://assets/units/enemis/urban/villager(1).png" id="2_0dcsm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jq8tk"]
+atlas = ExtResource("2_0dcsm")
+region = Rect2(62, 22, 7, 9)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xd07"]
+atlas = ExtResource("2_0dcsm")
+region = Rect2(15, 11, 14, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fhyq"]
+atlas = ExtResource("2_0dcsm")
+region = Rect2(21, 69, 8, 10)
+
+[sub_resource type="Animation" id="Animation_s4vnf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/LeftArm:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2.5, -1.75)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/RightArm:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.25, -2)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_rotft"]
+resource_name = "idle"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/LeftArm:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-2.5, -1.75), Vector2(-2.5, -2.71), Vector2(-2.5, -1.75)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/RightArm:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1.25, -2), Vector2(1.25, -2.625), Vector2(1.25, -2)]
+}
+
+[sub_resource type="Animation" id="Animation_ixcms"]
+resource_name = "walk"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.19999999, 0.39999998),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -4.055), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8lhj8"]
+_data = {
+&"RESET": SubResource("Animation_s4vnf"),
+&"idle": SubResource("Animation_rotft"),
+&"run": SubResource("Animation_ixcms")
+}
+
+[node name="Urban" type="CharacterBody2D" unique_id=473214135 node_paths=PackedStringArray("navigationAgent", "targetPosition", "animation", "body_container", "audioPlayer")]
+texture_filter = 1
+scale = Vector2(4, 4)
+script = ExtResource("1_0dcsm")
+health = 15.0
+protection = 0.0
+peaceful = true
+navigationAgent = NodePath("NavigationAgent2D")
+targetPosition = NodePath("Node/Marker2D")
+animation = NodePath("AnimationPlayer")
+body_container = NodePath("Node2D")
+audioPlayer = NodePath("AudioStreamPlayer2D")
+metadata/_custom_type_script = "uid://seqe3iovmyu6"
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=915280450]
+
+[node name="Node" type="Node" parent="." unique_id=1838115661]
+
+[node name="Marker2D" type="Marker2D" parent="Node" unique_id=638401696]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=570328399]
+
+[node name="LeftArm" type="Node2D" parent="Node2D" unique_id=1581203761]
+position = Vector2(-2.5, -1.75)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/LeftArm" unique_id=1799478060]
+position = Vector2(-1.75, 3)
+texture = SubResource("AtlasTexture_jq8tk")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=1184588963]
+texture = SubResource("AtlasTexture_3xd07")
+
+[node name="RightArm" type="Node2D" parent="Node2D" unique_id=1333497979]
+position = Vector2(1.25, -2)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D/RightArm" unique_id=2034290102]
+position = Vector2(1.75, 3.25)
+texture = SubResource("AtlasTexture_6fhyq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1310417227]
+libraries/ = SubResource("AnimationLibrary_8lhj8")
+autoplay = &"idle"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1595878553]

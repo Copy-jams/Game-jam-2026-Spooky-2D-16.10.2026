@@ -1,0 +1,199 @@
+[gd_scene format=3 uid="uid://dpb8g25f7hhqa"]
+
+[ext_resource type="Script" uid="uid://w1ux4pxexebb" path="res://scripts/Units/Friend/playerUnit.gd" id="1_oknah"]
+[ext_resource type="Texture2D" uid="uid://xw8km7hk7pl2" path="res://assets/units/friends/homonculus/homonculus.png" id="2_mac6i"]
+[ext_resource type="Texture2D" uid="uid://c2dgaw3atyyuv" path="res://assets/units/friends/homonculus/homonculus_left_arm.png" id="2_mhfj7"]
+[ext_resource type="Texture2D" uid="uid://dqqlavcf6eitu" path="res://assets/units/friends/homonculus/homonculus_right_arm.png" id="4_bgrb0"]
+[ext_resource type="Texture2D" uid="uid://cflllb3676h2" path="res://assets/units/friends/homonculus/homonculus_armour.png" id="4_u33lq"]
+[ext_resource type="Texture2D" uid="uid://bvlx47utjan8q" path="res://assets/units/friends/homonculus/homonculus_right_arm_ no_axe.png" id="5_u33lq"]
+[ext_resource type="PackedScene" uid="uid://cel4s8b12on46" path="res://tscn/Units/random.tscn" id="6_eh78k"]
+[ext_resource type="AudioStream" uid="uid://be2cvkqb7o3n8" path="res://assets/Sounds/Sound effects/Coin01.mp3" id="7_bgrb0"]
+
+[sub_resource type="Animation" id="Animation_mhfj7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/armRight:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.12217305]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/armLeft:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.2060962]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(7.615, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_bgrb0"]
+resource_name = "attack"
+step = 0.016666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/armLeft:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.6333333, 0.8333333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 2.2060962, 0.863938, 0.863938, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/armRight:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.6333333, 0.8333333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.010908297, 2.2060962, 0.863938, 0.863938, -0.010908297]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(7.615, 0), Vector2(-3.415, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_u33lq"]
+resource_name = "idle"
+length = 2.0
+loop_mode = 1
+step = 0.016666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/armRight:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.03333333, 0.5, 1.5, 2.0166667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.4363323129985824, -0.17453292, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/armLeft:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eh78k"]
+_data = {
+&"RESET": SubResource("Animation_mhfj7"),
+&"attack": SubResource("Animation_bgrb0"),
+&"idle": SubResource("Animation_u33lq")
+}
+
+[node name="Homunculus" type="CharacterBody2D" unique_id=1392208615 node_paths=PackedStringArray("navigationAgent", "targetPosition", "animationPlayer", "body", "Armory", "SoundPlayer")]
+texture_filter = 1
+scale = Vector2(6, 6)
+script = ExtResource("1_oknah")
+CallSign = "Homunculus"
+health = 25.0
+speed = 250
+attackDamage = 3.0
+attackTimeout = 3.0
+protection = 1.5
+canWearArmor = true
+souls = 3
+corpses = 5
+armorNeededForUpgrades = 3
+soulsNeededForUpgrades = 0
+navigationAgent = NodePath("NavigationAgent2D")
+targetPosition = NodePath("Node/Marker2D")
+animationPlayer = NodePath("AnimationPlayer")
+body = NodePath("Node2D")
+Armory = NodePath("Node2D/Armory")
+SoundPlayer = NodePath("Player")
+metadata/_custom_type_script = "uid://w1ux4pxexebb"
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=540323560]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=264699445]
+libraries/ = SubResource("AnimationLibrary_eh78k")
+autoplay = &"idle"
+
+[node name="Node" type="Node" parent="." unique_id=435538507]
+
+[node name="Marker2D" type="Marker2D" parent="Node" unique_id=1264040980]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=318411391]
+position = Vector2(7.615, 0)
+
+[node name="armLeft" type="Node2D" parent="Node2D" unique_id=50091614]
+position = Vector2(-5, -17)
+rotation = 2.2060962
+
+[node name="HomonculusLeftArm" type="Sprite2D" parent="Node2D/armLeft" unique_id=1011597582]
+position = Vector2(-7, 2)
+texture = ExtResource("2_mhfj7")
+
+[node name="homonculus" type="Sprite2D" parent="Node2D" unique_id=228217472]
+position = Vector2(0, -14)
+texture = ExtResource("2_mac6i")
+
+[node name="Armory" type="Node2D" parent="Node2D" unique_id=2126076822]
+
+[node name="HomonculusArmour" type="Sprite2D" parent="Node2D/Armory" unique_id=422301918]
+position = Vector2(0.051666856, -14.666666)
+texture = ExtResource("4_u33lq")
+
+[node name="armRight" type="Node2D" parent="Node2D" unique_id=1860222539]
+position = Vector2(6, -15)
+rotation = 0.12217305
+
+[node name="HomonculusRightArm" type="Sprite2D" parent="Node2D/armRight" unique_id=1708639915]
+visible = false
+position = Vector2(-5, 3)
+texture = ExtResource("4_bgrb0")
+
+[node name="HomonculusRightArmNoAxe" type="Sprite2D" parent="Node2D/armRight" unique_id=994024843]
+position = Vector2(-5, 3)
+texture = ExtResource("5_u33lq")
+
+[node name="Random" parent="Node2D/armRight" unique_id=1962896271 node_paths=PackedStringArray("Variables") instance=ExtResource("6_eh78k")]
+Variables = [NodePath("../HomonculusRightArm"), NodePath("../HomonculusRightArmNoAxe")]
+
+[node name="Player" type="AudioStreamPlayer2D" parent="." unique_id=1941396279]
+stream = ExtResource("7_bgrb0")

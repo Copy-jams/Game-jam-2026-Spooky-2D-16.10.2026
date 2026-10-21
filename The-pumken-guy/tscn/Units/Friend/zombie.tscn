@@ -1,0 +1,342 @@
+[gd_scene format=3 uid="uid://d2uq40ys5kock"]
+
+[ext_resource type="Script" uid="uid://w1ux4pxexebb" path="res://scripts/Units/Friend/playerUnit.gd" id="1_emehe"]
+[ext_resource type="AudioStream" uid="uid://be2cvkqb7o3n8" path="res://assets/Sounds/Sound effects/Coin01.mp3" id="2_d3ot6"]
+[ext_resource type="Texture2D" uid="uid://c3xbely7rvh40" path="res://assets/units/friends/Zombie/zombe_arm_left.png" id="3_pa0hr"]
+[ext_resource type="Texture2D" uid="uid://dbssvr0rkx74g" path="res://assets/units/friends/Zombie/zombe_armor.png" id="4_c0mrn"]
+[ext_resource type="Texture2D" uid="uid://stnhqj1vbdyg" path="res://assets/weapons/sword.png" id="4_msnfh"]
+[ext_resource type="Texture2D" uid="uid://3s0y6h33f14g" path="res://assets/units/friends/Zombie/zombe.png" id="4_yfmge"]
+[ext_resource type="Texture2D" uid="uid://y25h3o0evx28" path="res://assets/weapons/club.png" id="5_c0mrn"]
+[ext_resource type="Texture2D" uid="uid://bbfvqgn6k8uis" path="res://assets/units/friends/Zombie/zombe_arm_right.png" id="5_thity"]
+[ext_resource type="Script" uid="uid://bfixae277om8b" path="res://tscn/random.gd" id="6_6lpye"]
+
+[sub_resource type="Animation" id="Animation_pa0hr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/LeftArm:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2.25, -8.5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/RightArm:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(5, -10)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/LeftArm:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.3421582]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D/RightArm:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.3421582]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_yfmge"]
+resource_name = "attack"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-5, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/LeftArm:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.36666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.3421582, -0.68416905, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/RightArm:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.36666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.3421582, -0.68416905, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_thity"]
+resource_name = "idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/LeftArm:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-2.25, -8.5), Vector2(-2.25, -9.005), Vector2(-2.25, -8.5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/RightArm:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(5, -10), Vector2(5, -10.735), Vector2(5, -10)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/RightArm:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/LeftArm:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_6lpye"]
+resource_name = "walk"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -3.5), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/LeftArm:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-2.25, -8.5), Vector2(-2.25, -8.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/RightArm:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(5, -10), Vector2(5, -10)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D/LeftArm:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D/RightArm:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_msnfh"]
+_data = {
+&"RESET": SubResource("Animation_pa0hr"),
+&"attack": SubResource("Animation_yfmge"),
+&"idle": SubResource("Animation_thity"),
+&"walk": SubResource("Animation_6lpye")
+}
+
+[node name="Zombie" type="CharacterBody2D" unique_id=1987721765 node_paths=PackedStringArray("navigationAgent", "targetPosition", "animationPlayer", "body", "Armory", "Weapon", "SoundPlayer")]
+texture_filter = 1
+scale = Vector2(4, 4)
+script = ExtResource("1_emehe")
+CallSign = "Zombie"
+speed = 280
+typeWeapon = "Close-quarters combat"
+canWearArmor = true
+soulsNeededForUpgrades = 0
+navigationAgent = NodePath("NavigationAgent2D")
+targetPosition = NodePath("Node/Marker2D")
+animationPlayer = NodePath("AnimationPlayer")
+body = NodePath("Node2D")
+Armory = NodePath("Node2D/Armor")
+Weapon = NodePath("Node2D/RightArm/weapon")
+SoundPlayer = NodePath("Player")
+metadata/_custom_type_script = "uid://w1ux4pxexebb"
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1041886091]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=788184092]
+
+[node name="LeftArm" type="Node2D" parent="Node2D" unique_id=397856045]
+position = Vector2(-2.25, -8.5)
+rotation = 1.3421582
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="ZombeArmLeft" type="Sprite2D" parent="Node2D/LeftArm" unique_id=1971955717]
+position = Vector2(-2.75, 1.5)
+texture = ExtResource("3_pa0hr")
+
+[node name="Zombe" type="Sprite2D" parent="Node2D" unique_id=1054821697]
+position = Vector2(-2, -11)
+texture = ExtResource("4_yfmge")
+
+[node name="Armor" type="Node2D" parent="Node2D" unique_id=910128859]
+
+[node name="ZombeArmor" type="Sprite2D" parent="Node2D/Armor" unique_id=1988502515]
+position = Vector2(-2, -11.25)
+texture = ExtResource("4_c0mrn")
+
+[node name="RightArm" type="Node2D" parent="Node2D" unique_id=864610258]
+position = Vector2(5, -10)
+rotation = 1.3421582
+
+[node name="weapon" type="Node2D" parent="Node2D/RightArm" unique_id=1565299685]
+position = Vector2(-8, 2)
+
+[node name="Sword" type="Sprite2D" parent="Node2D/RightArm/weapon" unique_id=393589832]
+visible = false
+position = Vector2(-5.0000014, -12.5)
+rotation = -0.34906584
+texture = ExtResource("4_msnfh")
+
+[node name="Club" type="Sprite2D" parent="Node2D/RightArm/weapon" unique_id=1578785151]
+position = Vector2(-2.25, -13)
+rotation = -0.10571638
+texture = ExtResource("5_c0mrn")
+
+[node name="Random" type="Node" parent="Node2D/RightArm/weapon" unique_id=1076586497 node_paths=PackedStringArray("Variables")]
+script = ExtResource("6_6lpye")
+Variables = [NodePath("../Sword"), NodePath("../Club")]
+metadata/_custom_type_script = "uid://bfixae277om8b"
+
+[node name="ZombeArmRight" type="Sprite2D" parent="Node2D/RightArm" unique_id=119165702]
+position = Vector2(-4, 2)
+texture = ExtResource("5_thity")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1129612223]
+libraries/ = SubResource("AnimationLibrary_msnfh")
+autoplay = &"idle"
+
+[node name="Node" type="Node" parent="." unique_id=226423694]
+
+[node name="Marker2D" type="Marker2D" parent="Node" unique_id=1046860316]
+
+[node name="Player" type="AudioStreamPlayer2D" parent="." unique_id=108937729]
+stream = ExtResource("2_d3ot6")

@@ -1,0 +1,234 @@
+[gd_scene format=3 uid="uid://dbsgqukwiixnq"]
+
+[ext_resource type="Script" uid="uid://seqe3iovmyu6" path="res://scripts/Units/Enemis/enemyUnit.gd" id="1_3n3bf"]
+[ext_resource type="Texture2D" uid="uid://qovodyrotemt" path="res://assets/units/enemis/villager/villager_fork.png" id="2_nu4s0"]
+[ext_resource type="Texture2D" uid="uid://decg40jj8supx" path="res://assets/units/enemis/villager/villager_arm_left.png" id="3_iyh3j"]
+[ext_resource type="Script" uid="uid://bfixae277om8b" path="res://tscn/random.gd" id="4_p4dfv"]
+[ext_resource type="Texture2D" uid="uid://feikivyyrq4n" path="res://assets/units/enemis/villager/villager_arm_right.png" id="5_scq4s"]
+[ext_resource type="Texture2D" uid="uid://c7a5jfpkreyr8" path="res://assets/units/enemis/villager/villager.png" id="6_funi1"]
+
+[sub_resource type="Animation" id="Animation_3n3bf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/LeftArm:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(3, -13)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/RightArm:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-3, -14.999998)]
+}
+
+[sub_resource type="Animation" id="Animation_iyh3j"]
+resource_name = "idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/RightArm:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.0666667, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, -13.24), Vector2(-3, -14.555), Vector2(-3, -13.24)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/LeftArm:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.0666667, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(3, -13), Vector2(3, -13.96), Vector2(3, -13)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/LeftArm:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D/RightArm:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_nu4s0"]
+resource_name = "run"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -3.665), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/RightArm:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.4711804]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/LeftArm:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.1124806]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iyh3j"]
+_data = {
+&"RESET": SubResource("Animation_3n3bf"),
+&"idle": SubResource("Animation_iyh3j"),
+&"run": SubResource("Animation_nu4s0")
+}
+
+[node name="Villager" type="CharacterBody2D" unique_id=473214135 node_paths=PackedStringArray("navigationAgent", "targetPosition", "animation", "body_container", "audioPlayer")]
+texture_filter = 1
+position = Vector2(0, 1)
+scale = Vector2(4, 4)
+script = ExtResource("1_3n3bf")
+protection = 0.0
+peaceful = true
+navigationAgent = NodePath("NavigationAgent2D")
+targetPosition = NodePath("Node/Marker2D")
+animation = NodePath("AnimationPlayer")
+body_container = NodePath("Node2D")
+audioPlayer = NodePath("AudioStreamPlayer2D")
+metadata/_custom_type_script = "uid://seqe3iovmyu6"
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=915280450]
+
+[node name="Node" type="Node" parent="." unique_id=1838115661]
+
+[node name="Marker2D" type="Marker2D" parent="Node" unique_id=638401696]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=570328399]
+
+[node name="LeftArm" type="Node2D" parent="Node2D" unique_id=1581203761]
+position = Vector2(3, -13)
+
+[node name="weapon" type="Node2D" parent="Node2D/LeftArm" unique_id=224213742]
+position = Vector2(8.047346, 0.49012768)
+rotation = 0.23503664
+
+[node name="VillagerFork" type="Sprite2D" parent="Node2D/LeftArm/weapon" unique_id=1860454413]
+position = Vector2(-9, -1)
+texture = ExtResource("2_nu4s0")
+
+[node name="weapon2" type="Node2D" parent="Node2D/LeftArm" unique_id=808630598]
+position = Vector2(8.000002, 1)
+rotation = 0.11861929
+
+[node name="VillagerArmLeft" type="Sprite2D" parent="Node2D/LeftArm" unique_id=1157710133]
+texture = ExtResource("3_iyh3j")
+
+[node name="Random" type="Node" parent="Node2D/LeftArm" unique_id=871472793 node_paths=PackedStringArray("Variables")]
+script = ExtResource("4_p4dfv")
+Variables = [NodePath("../weapon"), NodePath("../weapon2")]
+metadata/_custom_type_script = "uid://bfixae277om8b"
+
+[node name="RightArm" type="Node2D" parent="Node2D" unique_id=1333497979]
+position = Vector2(-3, -14.999998)
+
+[node name="VillagerArmRight" type="Sprite2D" parent="Node2D/RightArm" unique_id=682984579]
+position = Vector2(3.3689785, 2.156382)
+texture = ExtResource("5_scq4s")
+
+[node name="Villager" type="Sprite2D" parent="Node2D" unique_id=726504513]
+position = Vector2(2, -13)
+texture = ExtResource("6_funi1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=575923264]
+libraries/ = SubResource("AnimationLibrary_iyh3j")
+autoplay = &"idle"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=900261703]

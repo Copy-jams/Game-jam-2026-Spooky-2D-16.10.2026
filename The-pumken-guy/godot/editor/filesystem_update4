@@ -1,0 +1,15 @@
+res://tscn/Units/Enemy/king.tscn
+res://themes/MainTheme.tres
+res://TileSets/new_tile_set.tres
+res://TileSets/new_tile_set_2.tres
+res://TileSets/new_tile_set_3.tres
+res://scripts/Units/Enemis/enemyUnit.gd
+res://tscn/Control/intro.tscn
+res://assets/icons/next_icon.png
+res://scripts/Control scripts/intro.gd
+res://scripts/Control scripts/starting_music.gd
+res://tscn/Control/menu.tscn
+res://tscn/Units/Enemy/soldat.tscn
+res://tscn/Units/Player/player.tscn
+res://tscn/Worlds/maps/castle_1.tscn
+res://tscn/Units/Enemy/enemy_units.tscn

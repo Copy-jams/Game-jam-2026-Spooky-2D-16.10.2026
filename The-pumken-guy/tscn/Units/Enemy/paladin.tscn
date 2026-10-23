@@ -242,7 +242,7 @@ _data = {
 &"run": SubResource("Animation_dce6p")
 }
 
-[node name="Paladin" type="CharacterBody2D" unique_id=1559666055 node_paths=PackedStringArray("navigationAgent", "targetPosition", "animation", "body_container")]
+[node name="Paladin" type="CharacterBody2D" unique_id=1559666055 node_paths=PackedStringArray("navigationAgent", "targetPosition", "animation", "body_container", "texture_root")]
 texture_filter = 1
 position = Vector2(-3, -9)
 scale = Vector2(4, 4)
@@ -260,6 +260,7 @@ navigationAgent = NodePath("NavigationAgent2D")
 targetPosition = NodePath("Node/Marker2D")
 animation = NodePath("AnimationPlayer")
 body_container = NodePath("Node2D")
+texture_root = NodePath("Node2D")
 metadata/_custom_type_script = "uid://seqe3iovmyu6"
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1470345500]

@@ -428,10 +428,17 @@ _data = {
 [node name="soldat" type="CharacterBody2D" unique_id=1879916154 node_paths=PackedStringArray("navigationAgent", "targetPosition", "animation", "body_container", "texture_root")]
 texture_filter = 1
 script = ExtResource("1_i7j0d")
+health = null
 speed = 300
+attackDamage = null
+attackTimeout = null
+protection = null
+souls = null
+corpses = null
 armor = 1
 close_quarters_combat_weapon = 1
 ranged_combat_weapon = 1
+peaceful = null
 navigationAgent = NodePath("NavigationAgent2D")
 targetPosition = NodePath("Node/Marker2D")
 animation = NodePath("AnimationPlayer")

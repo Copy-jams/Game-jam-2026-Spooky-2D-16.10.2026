@@ -1,153 +1,151 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1792592420
-export_presets.cfg::TextFile::-1::1792521119::0::1::::<><><>0<>0<><>::
-icon.svg::CompressedTexture2D::6192497920600890226::1792170119::1792170129::1::::<><><>0<>0<>fb302b96baee116f162e8ccea8dcf90f<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-не_успели.tscn::PackedScene::6390929578827174837::1792342526::0::1::::<><><>0<>0<><>::
-::res://assets/::1792592420
-map.png::CompressedTexture2D::3738243939771339331::1792338939::1792338940::1::::<><><>0<>0<>b044b2decbb5ce75fd4e74ab0239ad14<>res://.godot/imported/map.png-dfba05084e3346587240e6093ee94fb2.ctex::
-win_screen.png::CompressedTexture2D::2036629412337260416::1792515385::1792515385::1::::<><><>0<>0<>840201e160d128cc8fbe3c8eed380864<>res://.godot/imported/win_screen.png-5b65b38098bd37aa8fd408986d8a88fc.ctex::
-::res://assets/icons/::1792592513
-map_building_icons.png::CompressedTexture2D::6151574832434444481::1792328419::1792328883::1::::<><><>0<>0<>775a409d1388aad4b2b1e050768d26aa<>res://.godot/imported/map_building_icons.png-e14b4fc29a0cad51676e5609f5a0e803.ctex::
-next_icon.png::CompressedTexture2D::5384694216588438650::1792592513::1792592513::1::::<><><>0<>0<>e4993d32328172a88188c28862695705<>res://.godot/imported/next_icon.png-15440703e215b426c9b6ef1151c54e35.ctex::
-::res://assets/intro/::1792409829
-intro_final.png::CompressedTexture2D::7395964858881053653::1792339379::1792409829::1::::<><><>0<>0<>e6d669bc8ba4dc0d1d6b32bcc6a561d8<>res://.godot/imported/intro_final.png-6ebaa3b928be2656932c17f1305bee25.ctex::
-::res://assets/Player/::1792591984
-pumpkin_guy.png::CompressedTexture2D::744652866773123620::1792242198::1792257644::1::::<><><>0<>0<>47fdae340012690faa8c0911efb9a893<>res://.godot/imported/pumpkin_guy.png-de094270bdb511ee337338254643499b.ctex::
-pumpkin_guy_body.png::CompressedTexture2D::2656051994789496018::1792518774::1792518782::1::::<><><>0<>0<>979ea9dce35e523294639d00a45e55ae<>res://.godot/imported/pumpkin_guy_body.png-319b994696ec2db75eb78202362dc489.ctex::
-pumpkin_guy_fire.png::CompressedTexture2D::5908413259185571637::1792519467::1792519468::1::::<><><>0<>0<>aeacd1e2848b0499b8da9b4a05343498<>res://.godot/imported/pumpkin_guy_fire.png-3e4fd666db1c8e0d85536cefb2b39b65.ctex::
-pumpkin_guy_head.png::CompressedTexture2D::1021971269845748650::1792518774::1792518782::1::::<><><>0<>0<>fa601d5cc00ce023e2cdbea17cda3c24<>res://.godot/imported/pumpkin_guy_head.png-f0d4ca88d841a6010060973c30dfdfad.ctex::
-pumpkin_guy_lamp.png::CompressedTexture2D::3025463747113587529::1792242201::1792257644::1::::<><><>0<>0<>58d8de7815965e6b50a717fa8f209e22<>res://.godot/imported/pumpkin_guy_lamp.png-8b5079610629348e344c992e0d528be0.ctex::
-::res://assets/Projectiles/::1792321846
-bow_and_arrow.png::CompressedTexture2D::7906950769336162011::1792321830::1792321846::1::::<><><>0<>0<>ba904fab93f582bc564e4f3b21aa3f3d<>res://.godot/imported/bow_and_arrow.png-653f20d9e691de4eaefdbc4aa85e61bc.ctex::
-fireball_simple.png::CompressedTexture2D::175187079768407269::1792265419::1792265556::1::::<><><>0<>0<>3982e5e84c8902775862be5d27d0fed8<>res://.godot/imported/fireball_simple.png-036a5c648eb62ec4a8274aa81753aa5d.ctex::
-::res://assets/Sounds/::1792294134
-::res://assets/Sounds/Music themes/::1792515011
-attack.mp3::AudioStreamMP3::5623074610107295210::1792294134::1792515011::1::::<><><>0<>0<>2b43a45b6b13dd83e3db2bce1c59bbdf<>res://.godot/imported/attack.mp3-f20b8c84b24c3f2c6291a7ad437a1fbf.mp3str::
-BossMain.mp3::AudioStreamMP3::2480291256404202430::1792294134::1792514999::1::::<><><>0<>0<>75b70a207d80c9898cc474776ef4e141<>res://.godot/imported/BossMain.mp3-fad1020e7c295f7f582e7b3059027084.mp3str::
-pease.mp3::AudioStreamMP3::2188355582271935622::1792294134::1792294134::1::::<><><>0<>0<>0d7a0d06a116ddf43819edc0ea414a14<>res://.godot/imported/pease.mp3-8d0bba0642a342089822e632a4153809.mp3str::
-::res://assets/Sounds/Sound effects/::1792516019
-Coin01.mp3::AudioStreamMP3::2723073743301533659::1792294134::1792294134::1::::<><><>0<>0<>d253900f46d2016130d2d830db9eb7e7<>res://.godot/imported/Coin01.mp3-5244cd5be873c23121ba074bcefa592e.mp3str::
-scream2.mp3::AudioStreamMP3::2811097742240984376::1792409800::1792409839::1::::<><><>0<>0<>dbe4554949086fd9cd270459c37ba6cd<>res://.godot/imported/scream2.mp3-eaf35ffe906f880ac85828cba647ffd4.mp3str::
-scream.mp3::AudioStreamMP3::8235000942541729638::1792409800::1792409839::1::::<><><>0<>0<>b2eb6696a4c1c0efcb7b068d0325299b<>res://.godot/imported/scream.mp3-4884712dfa67ec041c21e3e2d1edb4d4.mp3str::
-::res://assets/tilesets/::1792512598
-texture_atlas(2)(4)(2)(1).png::CompressedTexture2D::2091846032176810954::1792333853::1792335159::1::::<><><>0<>0<>495aa1a8d83a0009d193c97fc608adaf<>res://.godot/imported/texture_atlas(2)(4)(2)(1).png-36ccae594827301cf7722550952bd704.ctex::
-tron.png::CompressedTexture2D::4083738331068720138::1792512597::1792512598::1::::<><><>0<>0<>d158bbeb0dfe738587d7d997203a5440<>res://.godot/imported/tron.png-5afd64e24c99e48cbd80e10c415b9a06.ctex::
-::res://assets/units/::1792301034
-::res://assets/units/enemis/::1792341794
-king_boss.png::CompressedTexture2D::1331833784493839274::1792323475::1792323475::1::::<><><>0<>0<>12cc63c20dbd76dfca3e912710fb2c3e<>res://.godot/imported/king_boss.png-c0539ea5617d5bedce75e7ffce0f3d9a.ctex::
-knight.png::CompressedTexture2D::4327874878874838445::1792341793::1792341794::1::::<><><>0<>0<>5c0fe1dc1e7ff71657ed572dfa1869ab<>res://.godot/imported/knight.png-792236ccbd00d5c1c560bfd3117e1640.ctex::
-paladin (2).png::CompressedTexture2D::7803552688056811646::1792323687::1792323687::1::::<><><>0<>0<>2659f8e06790ffbd28e1fe72152a70b4<>res://.godot/imported/paladin (2).png-0ea8fce46f2db37d9feee90d3fc511ca.ctex::
-::res://assets/units/enemis/urban/::1792320655
-villager(1).png::CompressedTexture2D::4399273930536287060::1792320654::1792320655::1::::<><><>0<>0<>d740b1b1a260d6875cd7e71ea546dc3c<>res://.godot/imported/villager(1).png-4e7f434982b818aec39c7ddd06451800.ctex::
-::res://assets/units/enemis/villager/::1792320641
-villager.png::CompressedTexture2D::7020722231997450867::1792317470::1792320641::1::::<><><>0<>0<>88801b6a7b78fc8302c7281987f61545<>res://.godot/imported/villager.png-a63e7abd5e3486ea145a9ca683952d59.ctex::
-villager_arm_left.png::CompressedTexture2D::7444563598560135397::1792317470::1792320641::1::::<><><>0<>0<>b7fcdcb7cbbc3ce699b2b9e83fcbdf4b<>res://.godot/imported/villager_arm_left.png-ae7116ea213f93706010cc89eb77196f.ctex::
-villager_arm_right.png::CompressedTexture2D::359705776838485487::1792317473::1792320641::1::::<><><>0<>0<>4d3a41bb181629af613926e2c9b0d919<>res://.godot/imported/villager_arm_right.png-a487af1c9e9b029c8605476d6626f848.ctex::
-villager_fork.png::CompressedTexture2D::1153223040165338451::1792317471::1792320641::1::::<><><>0<>0<>1418a6b8f570f6c32385fecedf0cdd89<>res://.godot/imported/villager_fork.png-e3284a04c04d2b46f9240c5153e32434.ctex::
-::res://assets/units/friends/::1792301034
-::res://assets/units/friends/ghost/::1792292328
-ghost_idle+attack.png::CompressedTexture2D::5036357839914857407::1792242202::1792257598::1::::<><><>0<>0<>23b9e82a95046ba5c0b22baf587630d8<>res://.godot/imported/ghost_idle+attack.png-b46e5331fe605b1ab25ef322a34665b6.ctex::
-::res://assets/units/friends/homonculus/::1792409313
-homonculus.png::CompressedTexture2D::1661781913011032013::1792256697::1792257883::1::::<><><>0<>0<>66afe90fd5f7e8a416a198f578e5639a<>res://.godot/imported/homonculus.png-b4b9a94f3c9930087547b01519e583aa.ctex::
-homonculus_armour.png::CompressedTexture2D::151387687316316725::1792409312::1792409313::1::::<><><>0<>0<>6f8e3b05caec2c63a448de98efa0aa43<>res://.godot/imported/homonculus_armour.png-227800493605e93e8d0dde1fcf8a3ac5.ctex::
-homonculus_left_arm.png::CompressedTexture2D::6674498779626443533::1792256680::1792257617::1::::<><><>0<>0<>b63c5844416c74ea407135aefdbbc29d<>res://.godot/imported/homonculus_left_arm.png-e359e714e761ef1ec8a2bff6aba89cf8.ctex::
-homonculus_right_arm.png::CompressedTexture2D::8315982586621941354::1792256681::1792257617::1::::<><><>0<>0<>1c02b1d0e90887255043342d7b7baf90<>res://.godot/imported/homonculus_right_arm.png-f314260fb8005650aab2c75ef7e0f2de.ctex::
-homonculus_right_arm_ no_axe.png::CompressedTexture2D::3884544546761918486::1792256681::1792257617::1::::<><><>0<>0<>588164170f9de20ac62397678b88f38e<>res://.godot/imported/homonculus_right_arm_ no_axe.png-e657d14c4be3be92ffca07c1d6d7928c.ctex::
-::res://assets/units/friends/Skeleton/::1792301034
-skeleton.png::CompressedTexture2D::6812124677133088845::1792260484::1792301034::1::::<><><>0<>0<>787124376086657337c749e2b1a363ea<>res://.godot/imported/skeleton.png-bc5fc6057191fd9166c23fe895b0ce01.ctex::
-skeleton_armor.png::CompressedTexture2D::3308664199667760695::1792260483::1792301034::1::::<><><>0<>0<>07a3a942fd8354ef50ff211347600438<>res://.godot/imported/skeleton_armor.png-97546123c9607f4911c6c9709ae72eda.ctex::
-skeleton_arm_left.png::CompressedTexture2D::2419048947349195366::1792260506::1792301034::1::::<><><>0<>0<>3f8b5617983c675e86f73ac4cfb7436c<>res://.godot/imported/skeleton_arm_left.png-04bf1d407f8c544ca71af714b395311f.ctex::
-skeleton_arm_right.png::CompressedTexture2D::371342692234231583::1792260483::1792301034::1::::<><><>0<>0<>0a65ecd24b252fe1305cdb06420166bf<>res://.godot/imported/skeleton_arm_right.png-27de2b6c330efaa39c54998f1c360df4.ctex::
-::res://assets/units/friends/Skeleton wizard/::1792301034
-skeleton_cape.png::CompressedTexture2D::659222431818171461::1792262040::1792301034::1::::<><><>0<>0<>54d0f86a67c2400ebcf5c663078ca4ad<>res://.godot/imported/skeleton_cape.png-c3604c1bc0290eefc012a14825fb2793.ctex::
-skeleton_cape_arm_left (2).png::CompressedTexture2D::104288293419540609::1792262028::1792301034::1::::<><><>0<>0<>8b254172fdd6b30208d61e21c2663c4b<>res://.godot/imported/skeleton_cape_arm_left (2).png-f4b599b8c3ba82b96a94151bd0917f3b.ctex::
-skeleton_cape_arm_right (2).png::CompressedTexture2D::7258013891199520344::1792262040::1792301034::1::::<><><>0<>0<>d51895d9e6899d9953ac93d5fb8a70b8<>res://.godot/imported/skeleton_cape_arm_right (2).png-9a931815c01da987f4d2328cbab36752.ctex::
-::res://assets/units/friends/Zombie/::1792408839
-zombe.png::CompressedTexture2D::2004008845658184048::1792293128::1792301034::1::::<><><>0<>0<>5075b239d888bb30d0d5cbe54f726f8c<>res://.godot/imported/zombe.png-65aac14269c6e00715a2b146aee74c4c.ctex::
-zombe_armor.png::CompressedTexture2D::7267741034135981080::1792408812::1792408839::1::::<><><>0<>0<>69cb23753216990ac697c4416f444c3c<>res://.godot/imported/zombe_armor.png-1b286c438479f0743feae77b2f9f0efc.ctex::
-zombe_arm_left.png::CompressedTexture2D::6785678154072513095::1792293128::1792301034::1::::<><><>0<>0<>652137952c837be4e6808d0ed8d19e20<>res://.godot/imported/zombe_arm_left.png-9d887f77321672358a52f5f4825b0097.ctex::
-zombe_arm_right.png::CompressedTexture2D::2468235382297746618::1792293128::1792301034::1::::<><><>0<>0<>09adb6078adb3d146f7ae7b7b1c48e1d<>res://.godot/imported/zombe_arm_right.png-c87b0b93d301df3a08fed880e376ba38.ctex::
-::res://assets/weapons/::1792317499
-club.png::CompressedTexture2D::1742105950435869083::1792317409::1792317499::1::::<><><>0<>0<>c40379942f38fe76b21285b5197ee85c<>res://.godot/imported/club.png-f66dc666945779565303b6a37cb086fe.ctex::
-sword.png::CompressedTexture2D::1303425039761286682::1792317430::1792317499::1::::<><><>0<>0<>e35bc9079a054c4f99c48fdcd7e70c03<>res://.godot/imported/sword.png-129af32814fbb6e5bc2233e933c75793.ctex::
-::res://scripts/::1792521007
-gray_box.gd::GDScript::5460394411495149528::1792521007::0::1::::<>Node2D<><>0<>0<><>::
-::res://scripts/autoload/::1792521418
-MapData.gd::GDScript::6553317607268803702::1792422632::0::1::::<>Node<><>0<>0<><>::
-OrdersTaker.gd::GDScript::5794912190018547630::1792515318::0::1::::<>Node<><>0<>0<><>::
-PlayerData.gd::GDScript::3267807131859675715::1792521418::0::1::::<>Node<><>0<>0<><>::
-Player_resources.gd::GDScript::5887933655224771074::1792521007::0::1::::<>Node<><>0<>0<><>::
-WorldSettings.gd::GDScript::5664264982721536832::1792303248::0::1::::<>Node<><>0<>0<><>::
-::res://scripts/Control scripts/::1792521432
-call_menu.gd::GDScript::3537575496027118786::1792422010::0::1::::<>MenuBar<><>0<>0<><>::
-count_res.gd::GDScript::4148009604001025201::1792235493::0::1::::<>VBoxContainer<><>0<>0<><>::
-CreateMap.gd::GDScript::1830917654031080658::1792332641::0::1::::<>Node2D<><>0<>0<><>::
-enter_to_location.gd::GDScript::7659350006555095101::1792424082::0::1::::EnterLocation<>Node2D<><>0<>0<><>::
-game_menu.gd::GDScript::6482993951153379517::1792521432::0::1::::<>Control<><>0<>0<><>::
-intro.gd::GDScript::7644374135166615760::1792340338::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
-map.gd::GDScript::3304534384034241973::1792326747::0::1::::MapGenerator<>Node2D<><>0<>0<><>::
-menu.gd::GDScript::297492700055328197::1792521432::0::1::::<>Control<><>0<>0<><>::
-menu_in_game.gd::GDScript::8891785704085205103::1792303723::0::1::::<>MenuBar<><>0<>0<><>::
-orders_menu.gd::GDScript::8477627354393625961::1792243428::0::1::::<>MenuBar<><>0<>0<><>::
-parametrs_settings.gd::GDScript::2472374316502016171::1792304114::0::1::::<>VBoxContainer<><>0<>0<><>::
-res_mon.gd::GDScript::8756097340613336993::1792237023::0::1::::<>MenuBar<><>0<>0<><>::
-starting_music.gd::GDScript::6540262533505002158::1792320465::0::1::::<>Node<><>0<>0<><>::
-update_menu.gd::GDScript::4592356909812974679::1792318500::0::1::::<>MenuBar<><>0<>0<><>::
-::res://scripts/Player/::1792520885
-player.gd::GDScript::5888442500292177177::1792520885::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://scripts/Projectile/::1792408435
-fireball.gd::GDScript::2126319416279596059::1792408435::0::1::::Projectile<>CharacterBody2D<><>0<>0<><>::
-::res://scripts/Units/::1792292329
-::res://scripts/Units/Enemis/::1792591562
-enemyUnit.gd::GDScript::1272636795237603479::1792591562::0::1::::EnemyUnit<>CharacterBody2D<><>0<>0<><>::
-::res://scripts/Units/Friend/::1792420443
-playerUnit.gd::GDScript::1599085342157897675::1792420442::0::1::::PlayerUnit<>CharacterBody2D<><>0<>0<><>::
-::res://themes/::1792590790
-MainTheme.tres::Theme::8397021659126077148::1792590790::0::1::::<><><>0<>0<><>::
-::res://TileSets/::1792590790
-new_tile_set.tres::TileSet::7044253771997757296::1792590790::0::1::::<><><>0<>0<><>::uid://42knsxysni4i::::res://assets/tilesets/texture_atlas(2)(4)(2)(1).png
-new_tile_set_2.tres::TileSet::3222923574613080809::1792590790::0::1::::<><><>0<>0<><>::uid://42knsxysni4i::::res://assets/tilesets/texture_atlas(2)(4)(2)(1).png
-new_tile_set_3.tres::TileSet::2059572268417426287::1792590790::0::1::::<><><>0<>0<><>::uid://42knsxysni4i::::res://assets/tilesets/texture_atlas(2)(4)(2)(1).png
-::res://tscn/::1792318843
-random.gd::GDScript::2755276668049751235::1792318843::0::1::::Random<>Node<><>0<>0<><>::
-::res://tscn/autoload/::1792294525
-MainMusicPlayer.tscn::PackedScene::3806415516168860569::1792294525::0::1::::<><><>0<>0<><>::
-::res://tscn/Control/::1792591690
-end.tscn::PackedScene::2554001404189612200::1792516025::0::1::::<><><>0<>0<><>::uid://4as8venechdo::::res://assets/win_screen.png<>uid://6gb5qutth1n3::::res://assets/Sounds/Music themes/pease.mp3
-game_menu.tscn::PackedScene::8957712833029771502::1792520202::0::1::::<><><>0<>0<><>::uid://cymn70psp17wr::::res://scripts/Control scripts/game_menu.gd<>uid://dw0rv5ms5sbsj::::res://scripts/Control scripts/res_mon.gd<>uid://b0dld2v15a2oj::::res://scripts/Control scripts/count_res.gd<>uid://drvtyqhf0wd21::::res://themes/MainTheme.tres<>uid://ds1vjwht5glef::::res://scripts/Control scripts/orders_menu.gd<>uid://bqnvl7oic1ywg::::res://scripts/Control scripts/call_menu.gd<>uid://b6otphe00x05p::::res://scripts/Control scripts/update_menu.gd<>uid://ddxa0h1er0lig::::res://tscn/Control/settings.tscn<>uid://dyxin8vii6mtb::::res://scripts/Control scripts/menu_in_game.gd
-intro.tscn::PackedScene::4548588959551168889::1792591690::0::1::::<><><>0<>0<><>::uid://ddmwpwr36m238::::res://assets/intro/intro_final.png<>uid://dg58ywji6l0gy::::res://scripts/Control scripts/intro.gd<>uid://c0gffywdu4bmk::::res://scripts/Control scripts/starting_music.gd<>uid://6gb5qutth1n3::::res://assets/Sounds/Music themes/pease.mp3
-menu.tscn::PackedScene::4858840994175916958::1792521417::0::1::::<><><>0<>0<><>::uid://eidwqp7uexu8::::res://scripts/Control scripts/menu.gd<>uid://drvtyqhf0wd21::::res://themes/MainTheme.tres
-settings.tscn::PackedScene::7417354323218218394::1792304114::0::1::::<><><>0<>0<><>::uid://drvtyqhf0wd21::::res://themes/MainTheme.tres<>uid://bbhvv5g546abb::::res://scripts/Control scripts/parametrs_settings.gd
-::res://tscn/Units/::1792292329
-random.tscn::PackedScene::5078099570346832333::1792258684::0::1::::<><><>0<>0<><>::uid://bfixae277om8b::::res://tscn/random.gd
-::res://tscn/Units/Enemy/::1792591562
-enemy_units.tscn::PackedScene::9010584580523708178::1792268687::0::1::::<><><>0<>0<><>::uid://seqe3iovmyu6::::res://scripts/Units/Enemis/enemyUnit.gd
-king.tscn::PackedScene::2737069523051612445::1792591562::0::1::::<><><>0<>0<><>::uid://seqe3iovmyu6::::res://scripts/Units/Enemis/enemyUnit.gd<>uid://s8fdww3gdhpy::::res://assets/units/enemis/king_boss.png<>uid://cqgcx53tceoc0::::res://assets/Player/pumpkin_guy_fire.png
-paladin.tscn::PackedScene::4453288609354288947::1792515865::0::1::::<><><>0<>0<><>::uid://seqe3iovmyu6::::res://scripts/Units/Enemis/enemyUnit.gd<>uid://djgdmw18u0dnq::::res://assets/units/enemis/paladin (2).png
-soldat.tscn::PackedScene::3333464377990881914::1792515487::0::1::::<><><>0<>0<><>::uid://seqe3iovmyu6::::res://scripts/Units/Enemis/enemyUnit.gd<>uid://b2wpp4116q25v::::res://assets/units/enemis/knight.png
-urban.tscn::PackedScene::5127173066916394496::1792415862::0::1::::<><><>0<>0<><>::uid://seqe3iovmyu6::::res://scripts/Units/Enemis/enemyUnit.gd<>uid://b3xbnteemsqf1::::res://assets/units/enemis/urban/villager(1).png
-villager.tscn::PackedScene::7267003635875147174::1792415741::0::1::::<><><>0<>0<><>::uid://seqe3iovmyu6::::res://scripts/Units/Enemis/enemyUnit.gd<>uid://qovodyrotemt::::res://assets/units/enemis/villager/villager_fork.png<>uid://decg40jj8supx::::res://assets/units/enemis/villager/villager_arm_left.png<>uid://bfixae277om8b::::res://tscn/random.gd<>uid://feikivyyrq4n::::res://assets/units/enemis/villager/villager_arm_right.png<>uid://c7a5jfpkreyr8::::res://assets/units/enemis/villager/villager.png
-::res://tscn/Units/Friend/::1792518353
-ghost.tscn::PackedScene::4586426882960743478::1792320564::0::1::::<><><>0<>0<><>::uid://w1ux4pxexebb::::res://scripts/Units/Friend/playerUnit.gd<>uid://cd0wcv67a4yup::::res://assets/units/friends/ghost/ghost_idle+attack.png<>uid://be2cvkqb7o3n8::::res://assets/Sounds/Sound effects/Coin01.mp3
-homunculus.tscn::PackedScene::8216174923673381396::1792518353::0::1::::<><><>0<>0<><>::uid://w1ux4pxexebb::::res://scripts/Units/Friend/playerUnit.gd<>uid://xw8km7hk7pl2::::res://assets/units/friends/homonculus/homonculus.png<>uid://c2dgaw3atyyuv::::res://assets/units/friends/homonculus/homonculus_left_arm.png<>uid://dqqlavcf6eitu::::res://assets/units/friends/homonculus/homonculus_right_arm.png<>uid://cflllb3676h2::::res://assets/units/friends/homonculus/homonculus_armour.png<>uid://bvlx47utjan8q::::res://assets/units/friends/homonculus/homonculus_right_arm_ no_axe.png<>uid://cel4s8b12on46::::res://tscn/Units/random.tscn<>uid://be2cvkqb7o3n8::::res://assets/Sounds/Sound effects/Coin01.mp3
-skeleton.tscn::PackedScene::5593684942061866837::1792325848::0::1::::<><><>0<>0<><>::uid://w1ux4pxexebb::::res://scripts/Units/Friend/playerUnit.gd<>uid://bap2napbbw63s::::res://assets/units/friends/Skeleton/skeleton_arm_left.png<>uid://n03gddxcbdxr::::res://tscn/Units/Projectiles/arrow.tscn<>uid://c4b3x0c2yk1fl::::res://assets/units/friends/Skeleton/skeleton.png<>uid://fj47vvn5i62n::::res://assets/units/friends/Skeleton/skeleton_arm_right.png<>uid://bne0hlwl82ekl::::res://assets/units/friends/Skeleton/skeleton_armor.png<>uid://be2cvkqb7o3n8::::res://assets/Sounds/Sound effects/Coin01.mp3
-skeleton_wizard.tscn::PackedScene::7362453827704518487::1792301711::0::1::::<><><>0<>0<><>::uid://w1ux4pxexebb::::res://scripts/Units/Friend/playerUnit.gd<>uid://bqru3tvbv1ll::::res://assets/units/friends/Skeleton wizard/skeleton_cape_arm_left (2).png<>uid://jnlkdqy2elrh::::res://assets/units/friends/Skeleton wizard/skeleton_cape.png<>uid://dbn3othahqj1q::::res://assets/units/friends/Skeleton wizard/skeleton_cape_arm_right (2).png<>uid://lxlrduk63mc1::::res://tscn/Units/Projectiles/fireball.tscn<>uid://be2cvkqb7o3n8::::res://assets/Sounds/Sound effects/Coin01.mp3
-unit.tscn::PackedScene::7553120087421075221::1792247115::0::1::::<><><>0<>0<><>::uid://w1ux4pxexebb::::res://scripts/Units/Friend/playerUnit.gd
-zombie.tscn::PackedScene::9096672995312275062::1792409399::0::1::::<><><>0<>0<><>::uid://w1ux4pxexebb::::res://scripts/Units/Friend/playerUnit.gd<>uid://be2cvkqb7o3n8::::res://assets/Sounds/Sound effects/Coin01.mp3<>uid://c3xbely7rvh40::::res://assets/units/friends/Zombie/zombe_arm_left.png<>uid://dbssvr0rkx74g::::res://assets/units/friends/Zombie/zombe_armor.png<>uid://stnhqj1vbdyg::::res://assets/weapons/sword.png<>uid://3s0y6h33f14g::::res://assets/units/friends/Zombie/zombe.png<>uid://y25h3o0evx28::::res://assets/weapons/club.png<>uid://bbfvqgn6k8uis::::res://assets/units/friends/Zombie/zombe_arm_right.png<>uid://bfixae277om8b::::res://tscn/random.gd
-::res://tscn/Units/Player/::1792520825
-player.tscn::PackedScene::5568825716449586578::1792520825::0::1::::<><><>0<>0<><>::uid://cp5n11sqtgyvp::::res://scripts/Player/player.gd<>uid://bd3u12jl3wb3g::::res://assets/Player/pumpkin_guy_body.png<>uid://d0vghsgvfned7::::res://tscn/Control/game_menu.tscn<>uid://kuylapm1ftvg::::res://assets/Player/pumpkin_guy.png<>uid://otbynoyn1pck::::res://assets/Player/pumpkin_guy_head.png<>uid://bjds7fph00f3f::::res://assets/Player/pumpkin_guy_lamp.png<>uid://cqgcx53tceoc0::::res://assets/Player/pumpkin_guy_fire.png
-::res://tscn/Units/Projectiles/::1792408760
-arrow.tscn::PackedScene::965775364959000435::1792408760::0::1::::<><><>0<>0<><>::uid://5kaf1ww2bbp8::::res://scripts/Projectile/fireball.gd<>uid://dkwglaqtnd32n::::res://assets/Projectiles/bow_and_arrow.png
-fireball.tscn::PackedScene::820256402741579294::1792267344::0::1::::<><><>0<>0<><>::uid://5kaf1ww2bbp8::::res://scripts/Projectile/fireball.gd<>uid://cq4knjv222tl::::res://assets/Projectiles/fireball_simple.png
-::res://tscn/Worlds/::1792521037
-gray_box.tscn::PackedScene::563300085023079720::1792521037::0::1::::<><><>0<>0<><>::uid://cj2b5skhibdoi::::res://scripts/gray_box.gd<>uid://cllt0mkg4ot7g::::res://tscn/Units/Player/player.tscn<>uid://bnq0w2888wbru::::res://tscn/Units/Enemy/soldat.tscn<>uid://be84euic5efcf::::res://tscn/Units/Enemy/king.tscn<>uid://b4phao0u6vmi2::::res://tscn/Units/Enemy/paladin.tscn
-map.tscn::PackedScene::94237419452676266::1792515164::0::1::::<><><>0<>0<><>::uid://bti3ljihetc1p::::res://assets/map.png<>uid://dgrnpvbbhoyew::::res://tscn/Worlds/maps/castle_1.tscn<>uid://bqfmxgpukbk4t::::res://tscn/Worlds/maps/City_1.tscn<>uid://calpnwwygnd15::::res://tscn/Worlds/Enters/castle.tscn<>uid://hoeei3dxy1ab::::res://tscn/Worlds/maps/village_1.tscn<>uid://dq4naagl0co4s::::res://tscn/Worlds/Enters/city.tscn<>uid://tg5xj4c1i8m4::::res://tscn/Worlds/Enters/village.tscn
-::res://tscn/Worlds/Enters/::1792339241
-castle.tscn::PackedScene::4796484683491504102::1792339217::0::1::::<><><>0<>0<><>::uid://dheim1feit1s0::::res://scripts/Control scripts/enter_to_location.gd
-city.tscn::PackedScene::8342939834863639204::1792339234::0::1::::<><><>0<>0<><>::uid://dheim1feit1s0::::res://scripts/Control scripts/enter_to_location.gd<>uid://ctv4sk1npsxjt::::res://assets/icons/map_building_icons.png
-village.tscn::PackedScene::1347837396325228441::1792339241::0::1::::<><><>0<>0<><>::uid://dheim1feit1s0::::res://scripts/Control scripts/enter_to_location.gd
-::res://tscn/Worlds/maps/::1792518417
-castle_1.tscn::PackedScene::7616306747131576510::1792518417::0::1::::<><><>0<>0<><>::uid://cas4ck47xt46p::::res://tscn/Worlds/maps/maps_end.gd<>uid://c7mj3h84qojho::::res://TileSets/new_tile_set.tres<>uid://bl6hcy68432sj::::res://TileSets/new_tile_set_2.tres<>uid://4lw4bvrojpql::::res://TileSets/new_tile_set_3.tres<>uid://byggtrftkcbuo::::res://assets/tilesets/tron.png<>uid://be84euic5efcf::::res://tscn/Units/Enemy/king.tscn<>uid://b4phao0u6vmi2::::res://tscn/Units/Enemy/paladin.tscn<>uid://cllt0mkg4ot7g::::res://tscn/Units/Player/player.tscn<>uid://bblqbgavequ5s::::res://assets/Sounds/Music themes/BossMain.mp3<>uid://bnq0w2888wbru::::res://tscn/Units/Enemy/soldat.tscn
-City_1.tscn::PackedScene::3520534087079219069::1792515498::0::1::::<><><>0<>0<><>::uid://cas4ck47xt46p::::res://tscn/Worlds/maps/maps_end.gd<>uid://bnq0w2888wbru::::res://tscn/Units/Enemy/soldat.tscn<>uid://c7mj3h84qojho::::res://TileSets/new_tile_set.tres<>uid://cllt0mkg4ot7g::::res://tscn/Units/Player/player.tscn<>uid://bl6hcy68432sj::::res://TileSets/new_tile_set_2.tres<>uid://cfbv151fc2pfc::::res://tscn/Units/Enemy/urban.tscn<>uid://4lw4bvrojpql::::res://TileSets/new_tile_set_3.tres<>uid://cmd4hngioj867::::res://assets/Sounds/Music themes/attack.mp3
-maps_end.gd::GDScript::4811765102855595497::1792424244::0::1::::Map_node<>Node2D<><>0<>0<><>::
-village_1.tscn::PackedScene::520473668779089145::1792515318::0::1::::<><><>0<>0<><>::uid://42knsxysni4i::::res://assets/tilesets/texture_atlas(2)(4)(2)(1).png<>uid://cas4ck47xt46p::::res://tscn/Worlds/maps/maps_end.gd<>uid://dbsgqukwiixnq::::res://tscn/Units/Enemy/villager.tscn<>uid://cfbv151fc2pfc::::res://tscn/Units/Enemy/urban.tscn<>uid://cllt0mkg4ot7g::::res://tscn/Units/Player/player.tscn<>uid://cmd4hngioj867::::res://assets/Sounds/Music themes/attack.mp3
+::res://::1792751235
+export_presets.cfg::TextFile::-1::1792618016::0::1::::<><><>0<>0<><>::
+не_успели.tscn::PackedScene::6390929578827174837::1792618016::0::1::::<><><>0<>0<><>::
+::res://assets/::1792751099
+map.png::CompressedTexture2D::3738243939771339331::1792618016::1792751099::1::::<><><>0<>0<>b044b2decbb5ce75fd4e74ab0239ad14<>res://.godot/imported/map.png-dfba05084e3346587240e6093ee94fb2.ctex::
+win_screen.png::CompressedTexture2D::2036629412337260416::1792618016::1792751099::1::::<><><>0<>0<>840201e160d128cc8fbe3c8eed380864<>res://.godot/imported/win_screen.png-5b65b38098bd37aa8fd408986d8a88fc.ctex::
+::res://assets/icons/::1792751099
+map_building_icons.png::CompressedTexture2D::6151574832434444481::1792618016::1792751235::0::::<><><>0<>0<>47967d5fd310b64caff5b7b40d73559c<>::
+next_icon.png::CompressedTexture2D::5384694216588438650::1792618016::1792751099::1::::<><><>0<>0<>e4993d32328172a88188c28862695705<>res://.godot/imported/next_icon.png-15440703e215b426c9b6ef1151c54e35.ctex::
+::res://assets/intro/::1792751099
+intro_final.png::CompressedTexture2D::7395964858881053653::1792618016::1792751099::1::::<><><>0<>0<>e6d669bc8ba4dc0d1d6b32bcc6a561d8<>res://.godot/imported/intro_final.png-6ebaa3b928be2656932c17f1305bee25.ctex::
+::res://assets/Player/::1792751099
+pumpkin_guy.png::CompressedTexture2D::744652866773123620::1792618016::1792751099::1::::<><><>0<>0<>47fdae340012690faa8c0911efb9a893<>res://.godot/imported/pumpkin_guy.png-de094270bdb511ee337338254643499b.ctex::
+pumpkin_guy_body.png::CompressedTexture2D::2656051994789496018::1792618016::1792751099::1::::<><><>0<>0<>979ea9dce35e523294639d00a45e55ae<>res://.godot/imported/pumpkin_guy_body.png-319b994696ec2db75eb78202362dc489.ctex::
+pumpkin_guy_fire.png::CompressedTexture2D::5908413259185571637::1792618016::1792751099::1::::<><><>0<>0<>aeacd1e2848b0499b8da9b4a05343498<>res://.godot/imported/pumpkin_guy_fire.png-3e4fd666db1c8e0d85536cefb2b39b65.ctex::
+pumpkin_guy_head.png::CompressedTexture2D::1021971269845748650::1792618016::1792751099::1::::<><><>0<>0<>fa601d5cc00ce023e2cdbea17cda3c24<>res://.godot/imported/pumpkin_guy_head.png-f0d4ca88d841a6010060973c30dfdfad.ctex::
+pumpkin_guy_lamp.png::CompressedTexture2D::3025463747113587529::1792618016::1792751099::1::::<><><>0<>0<>58d8de7815965e6b50a717fa8f209e22<>res://.godot/imported/pumpkin_guy_lamp.png-8b5079610629348e344c992e0d528be0.ctex::
+::res://assets/Projectiles/::1792751099
+bow_and_arrow.png::CompressedTexture2D::7906950769336162011::1792618016::1792751099::1::::<><><>0<>0<>ba904fab93f582bc564e4f3b21aa3f3d<>res://.godot/imported/bow_and_arrow.png-653f20d9e691de4eaefdbc4aa85e61bc.ctex::
+fireball_simple.png::CompressedTexture2D::175187079768407269::1792618016::1792751099::1::::<><><>0<>0<>3982e5e84c8902775862be5d27d0fed8<>res://.godot/imported/fireball_simple.png-036a5c648eb62ec4a8274aa81753aa5d.ctex::
+::res://assets/Sounds/::1792750619
+::res://assets/Sounds/Music themes/::1792751099
+attack.mp3::AudioStreamMP3::5623074610107295210::1792618016::1792751099::1::::<><><>0<>0<>2b43a45b6b13dd83e3db2bce1c59bbdf<>res://.godot/imported/attack.mp3-f20b8c84b24c3f2c6291a7ad437a1fbf.mp3str::
+BossMain.mp3::AudioStreamMP3::2480291256404202430::1792618016::1792751099::1::::<><><>0<>0<>75b70a207d80c9898cc474776ef4e141<>res://.godot/imported/BossMain.mp3-fad1020e7c295f7f582e7b3059027084.mp3str::
+pease.mp3::AudioStreamMP3::2188355582271935622::1792618016::1792751099::1::::<><><>0<>0<>0d7a0d06a116ddf43819edc0ea414a14<>res://.godot/imported/pease.mp3-8d0bba0642a342089822e632a4153809.mp3str::
+::res://assets/Sounds/Sound effects/::1792751099
+Coin01.mp3::AudioStreamMP3::2723073743301533659::1792618016::1792751099::1::::<><><>0<>0<>d253900f46d2016130d2d830db9eb7e7<>res://.godot/imported/Coin01.mp3-5244cd5be873c23121ba074bcefa592e.mp3str::
+scream2.mp3::AudioStreamMP3::2811097742240984376::1792618016::1792751099::1::::<><><>0<>0<>dbe4554949086fd9cd270459c37ba6cd<>res://.godot/imported/scream2.mp3-eaf35ffe906f880ac85828cba647ffd4.mp3str::
+scream.mp3::AudioStreamMP3::8235000942541729638::1792618016::1792751099::1::::<><><>0<>0<>b2eb6696a4c1c0efcb7b068d0325299b<>res://.godot/imported/scream.mp3-4884712dfa67ec041c21e3e2d1edb4d4.mp3str::
+::res://assets/tilesets/::1792751099
+texture_atlas(2)(4)(2)(1).png::CompressedTexture2D::2091846032176810954::1792618016::1792751099::1::::<><><>0<>0<>495aa1a8d83a0009d193c97fc608adaf<>res://.godot/imported/texture_atlas(2)(4)(2)(1).png-36ccae594827301cf7722550952bd704.ctex::
+tron.png::CompressedTexture2D::4083738331068720138::1792618016::1792751099::1::::<><><>0<>0<>d158bbeb0dfe738587d7d997203a5440<>res://.godot/imported/tron.png-5afd64e24c99e48cbd80e10c415b9a06.ctex::
+::res://assets/units/::1792750619
+::res://assets/units/enemis/::1792751099
+king_boss.png::CompressedTexture2D::1331833784493839274::1792618016::1792751099::1::::<><><>0<>0<>12cc63c20dbd76dfca3e912710fb2c3e<>res://.godot/imported/king_boss.png-c0539ea5617d5bedce75e7ffce0f3d9a.ctex::
+knight.png::CompressedTexture2D::4327874878874838445::1792618016::1792751099::1::::<><><>0<>0<>5c0fe1dc1e7ff71657ed572dfa1869ab<>res://.godot/imported/knight.png-792236ccbd00d5c1c560bfd3117e1640.ctex::
+paladin (2).png::CompressedTexture2D::7803552688056811646::1792618016::1792751099::1::::<><><>0<>0<>2659f8e06790ffbd28e1fe72152a70b4<>res://.godot/imported/paladin (2).png-0ea8fce46f2db37d9feee90d3fc511ca.ctex::
+::res://assets/units/enemis/urban/::1792751099
+villager(1).png::CompressedTexture2D::4399273930536287060::1792618016::1792751235::0::::<><><>0<>0<>d12640ba0db97b0842c9cf4e86038399<>::
+::res://assets/units/enemis/villager/::1792751099
+villager.png::CompressedTexture2D::7020722231997450867::1792618016::1792751099::1::::<><><>0<>0<>88801b6a7b78fc8302c7281987f61545<>res://.godot/imported/villager.png-a63e7abd5e3486ea145a9ca683952d59.ctex::
+villager_arm_left.png::CompressedTexture2D::7444563598560135397::1792618016::1792751099::1::::<><><>0<>0<>b7fcdcb7cbbc3ce699b2b9e83fcbdf4b<>res://.godot/imported/villager_arm_left.png-ae7116ea213f93706010cc89eb77196f.ctex::
+villager_arm_right.png::CompressedTexture2D::359705776838485487::1792618016::1792751099::1::::<><><>0<>0<>4d3a41bb181629af613926e2c9b0d919<>res://.godot/imported/villager_arm_right.png-a487af1c9e9b029c8605476d6626f848.ctex::
+villager_fork.png::CompressedTexture2D::1153223040165338451::1792618016::1792751099::1::::<><><>0<>0<>1418a6b8f570f6c32385fecedf0cdd89<>res://.godot/imported/villager_fork.png-e3284a04c04d2b46f9240c5153e32434.ctex::
+::res://assets/units/friends/::1792750619
+::res://assets/units/friends/ghost/::1792751099
+ghost_idle+attack.png::CompressedTexture2D::5036357839914857407::1792618016::1792751099::1::::<><><>0<>0<>23b9e82a95046ba5c0b22baf587630d8<>res://.godot/imported/ghost_idle+attack.png-b46e5331fe605b1ab25ef322a34665b6.ctex::
+::res://assets/units/friends/homonculus/::1792751099
+homonculus.png::CompressedTexture2D::1661781913011032013::1792618016::1792751099::1::::<><><>0<>0<>66afe90fd5f7e8a416a198f578e5639a<>res://.godot/imported/homonculus.png-b4b9a94f3c9930087547b01519e583aa.ctex::
+homonculus_armour.png::CompressedTexture2D::151387687316316725::1792618016::1792751099::1::::<><><>0<>0<>6f8e3b05caec2c63a448de98efa0aa43<>res://.godot/imported/homonculus_armour.png-227800493605e93e8d0dde1fcf8a3ac5.ctex::
+homonculus_left_arm.png::CompressedTexture2D::6674498779626443533::1792618016::1792751099::1::::<><><>0<>0<>b63c5844416c74ea407135aefdbbc29d<>res://.godot/imported/homonculus_left_arm.png-e359e714e761ef1ec8a2bff6aba89cf8.ctex::
+homonculus_right_arm.png::CompressedTexture2D::8315982586621941354::1792618016::1792751099::1::::<><><>0<>0<>1c02b1d0e90887255043342d7b7baf90<>res://.godot/imported/homonculus_right_arm.png-f314260fb8005650aab2c75ef7e0f2de.ctex::
+homonculus_right_arm_ no_axe.png::CompressedTexture2D::3884544546761918486::1792618016::1792751099::1::::<><><>0<>0<>588164170f9de20ac62397678b88f38e<>res://.godot/imported/homonculus_right_arm_ no_axe.png-e657d14c4be3be92ffca07c1d6d7928c.ctex::
+::res://assets/units/friends/Skeleton/::1792751099
+skeleton.png::CompressedTexture2D::6812124677133088845::1792618016::1792751099::1::::<><><>0<>0<>787124376086657337c749e2b1a363ea<>res://.godot/imported/skeleton.png-bc5fc6057191fd9166c23fe895b0ce01.ctex::
+skeleton_armor.png::CompressedTexture2D::3308664199667760695::1792618016::1792751099::1::::<><><>0<>0<>07a3a942fd8354ef50ff211347600438<>res://.godot/imported/skeleton_armor.png-97546123c9607f4911c6c9709ae72eda.ctex::
+skeleton_arm_left.png::CompressedTexture2D::2419048947349195366::1792618016::1792751099::1::::<><><>0<>0<>3f8b5617983c675e86f73ac4cfb7436c<>res://.godot/imported/skeleton_arm_left.png-04bf1d407f8c544ca71af714b395311f.ctex::
+skeleton_arm_right.png::CompressedTexture2D::371342692234231583::1792618016::1792751099::1::::<><><>0<>0<>0a65ecd24b252fe1305cdb06420166bf<>res://.godot/imported/skeleton_arm_right.png-27de2b6c330efaa39c54998f1c360df4.ctex::
+::res://assets/units/friends/Skeleton wizard/::1792751099
+skeleton_cape.png::CompressedTexture2D::659222431818171461::1792618016::1792751099::1::::<><><>0<>0<>54d0f86a67c2400ebcf5c663078ca4ad<>res://.godot/imported/skeleton_cape.png-c3604c1bc0290eefc012a14825fb2793.ctex::
+skeleton_cape_arm_left (2).png::CompressedTexture2D::104288293419540609::1792618016::1792751099::1::::<><><>0<>0<>8b254172fdd6b30208d61e21c2663c4b<>res://.godot/imported/skeleton_cape_arm_left (2).png-f4b599b8c3ba82b96a94151bd0917f3b.ctex::
+skeleton_cape_arm_right (2).png::CompressedTexture2D::7258013891199520344::1792618016::1792751099::1::::<><><>0<>0<>d51895d9e6899d9953ac93d5fb8a70b8<>res://.godot/imported/skeleton_cape_arm_right (2).png-9a931815c01da987f4d2328cbab36752.ctex::
+::res://assets/units/friends/Zombie/::1792751099
+zombe.png::CompressedTexture2D::2004008845658184048::1792618016::1792751099::1::::<><><>0<>0<>5075b239d888bb30d0d5cbe54f726f8c<>res://.godot/imported/zombe.png-65aac14269c6e00715a2b146aee74c4c.ctex::
+zombe_armor.png::CompressedTexture2D::7267741034135981080::1792618016::1792751099::1::::<><><>0<>0<>69cb23753216990ac697c4416f444c3c<>res://.godot/imported/zombe_armor.png-1b286c438479f0743feae77b2f9f0efc.ctex::
+zombe_arm_left.png::CompressedTexture2D::6785678154072513095::1792618016::1792751099::1::::<><><>0<>0<>652137952c837be4e6808d0ed8d19e20<>res://.godot/imported/zombe_arm_left.png-9d887f77321672358a52f5f4825b0097.ctex::
+zombe_arm_right.png::CompressedTexture2D::2468235382297746618::1792618016::1792751099::1::::<><><>0<>0<>09adb6078adb3d146f7ae7b7b1c48e1d<>res://.godot/imported/zombe_arm_right.png-c87b0b93d301df3a08fed880e376ba38.ctex::
+::res://assets/weapons/::1792751099
+club.png::CompressedTexture2D::1742105950435869083::1792618016::1792751099::1::::<><><>0<>0<>c40379942f38fe76b21285b5197ee85c<>res://.godot/imported/club.png-f66dc666945779565303b6a37cb086fe.ctex::
+sword.png::CompressedTexture2D::1303425039761286682::1792618016::1792751099::1::::<><><>0<>0<>e35bc9079a054c4f99c48fdcd7e70c03<>res://.godot/imported/sword.png-129af32814fbb6e5bc2233e933c75793.ctex::
+::res://scripts/::1792750619
+gray_box.gd::GDScript::5460394411495149528::1792618016::0::1::::<>Node2D<><>0<>0<><>::
+::res://scripts/autoload/::1792750619
+MapData.gd::GDScript::6553317607268803702::1792618016::0::1::::<>Node<><>0<>0<><>::
+OrdersTaker.gd::GDScript::5794912190018547630::1792618016::0::1::::<>Node<><>0<>0<><>::
+PlayerData.gd::GDScript::3267807131859675715::1792618016::0::1::::<>Node<><>0<>0<><>::
+Player_resources.gd::GDScript::5887933655224771074::1792618016::0::1::::<>Node<><>0<>0<><>::
+WorldSettings.gd::GDScript::5664264982721536832::1792618016::0::1::::<>Node<><>0<>0<><>::
+::res://scripts/Control scripts/::1792750619
+call_menu.gd::GDScript::3537575496027118786::1792618016::0::1::::<>MenuBar<><>0<>0<><>::
+count_res.gd::GDScript::4148009604001025201::1792618016::0::1::::<>VBoxContainer<><>0<>0<><>::
+CreateMap.gd::GDScript::1830917654031080658::1792618016::0::1::::<>Node2D<><>0<>0<><>::
+enter_to_location.gd::GDScript::7659350006555095101::1792618016::0::1::::EnterLocation<>Node2D<><>0<>0<><>::
+game_menu.gd::GDScript::6482993951153379517::1792618016::0::1::::<>Control<><>0<>0<><>::
+intro.gd::GDScript::7644374135166615760::1792618016::0::1::::<>Control<><>0<>0<><>::
+map.gd::GDScript::3304534384034241973::1792618016::0::1::::MapGenerator<>Node2D<><>0<>0<><>::
+menu.gd::GDScript::297492700055328197::1792618016::0::1::::<>Control<><>0<>0<><>::
+menu_in_game.gd::GDScript::8891785704085205103::1792618016::0::1::::<>MenuBar<><>0<>0<><>::
+orders_menu.gd::GDScript::8477627354393625961::1792618016::0::1::::<>MenuBar<><>0<>0<><>::
+parametrs_settings.gd::GDScript::2472374316502016171::1792618016::0::1::::<>VBoxContainer<><>0<>0<><>::
+res_mon.gd::GDScript::8756097340613336993::1792618016::0::1::::<>MenuBar<><>0<>0<><>::
+update_menu.gd::GDScript::4592356909812974679::1792618016::0::1::::<>MenuBar<><>0<>0<><>::
+::res://scripts/Player/::1792750619
+player.gd::GDScript::5888442500292177177::1792618016::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://scripts/Projectile/::1792750619
+fireball.gd::GDScript::2126319416279596059::1792618016::0::1::::Projectile<>CharacterBody2D<><>0<>0<><>::
+::res://scripts/Units/::1792750619
+::res://scripts/Units/Enemis/::1792750619
+enemyUnit.gd::GDScript::1272636795237603479::1792618016::0::1::::EnemyUnit<>CharacterBody2D<><>0<>0<><>::
+::res://scripts/Units/Friend/::1792750619
+playerUnit.gd::GDScript::1599085342157897675::1792618016::0::1::::PlayerUnit<>CharacterBody2D<><>0<>0<><>::
+::res://themes/::1792750619
+MainTheme.tres::Theme::8397021659126077148::1792618016::0::1::::<><><>0<>0<><>::
+::res://TileSets/::1792750619
+new_tile_set.tres::TileSet::7044253771997757296::1792618016::0::1::::<><><>0<>0<><>::uid://42knsxysni4i::::res://assets/tilesets/texture_atlas(2)(4)(2)(1).png
+new_tile_set_2.tres::TileSet::3222923574613080809::1792618016::0::1::::<><><>0<>0<><>::uid://42knsxysni4i::::res://assets/tilesets/texture_atlas(2)(4)(2)(1).png
+new_tile_set_3.tres::TileSet::2059572268417426287::1792618016::0::1::::<><><>0<>0<><>::uid://42knsxysni4i::::res://assets/tilesets/texture_atlas(2)(4)(2)(1).png
+::res://tscn/::1792750619
+random.gd::GDScript::2755276668049751235::1792618016::0::1::::Random<>Node<><>0<>0<><>::
+::res://tscn/autoload/::1792750619
+MainMusicPlayer.tscn::PackedScene::3806415516168860569::1792618016::0::1::::<><><>0<>0<><>::
+::res://tscn/Control/::1792750619
+end.tscn::PackedScene::2554001404189612200::1792618016::0::1::::<><><>0<>0<><>::uid://4as8venechdo::::res://assets/win_screen.png<>uid://6gb5qutth1n3::::res://assets/Sounds/Music themes/pease.mp3
+game_menu.tscn::PackedScene::8957712833029771502::1792618016::0::1::::<><><>0<>0<><>::uid://cymn70psp17wr::::res://scripts/Control scripts/game_menu.gd<>uid://dw0rv5ms5sbsj::::res://scripts/Control scripts/res_mon.gd<>uid://b0dld2v15a2oj::::res://scripts/Control scripts/count_res.gd<>uid://drvtyqhf0wd21::::res://themes/MainTheme.tres<>uid://ds1vjwht5glef::::res://scripts/Control scripts/orders_menu.gd<>uid://bqnvl7oic1ywg::::res://scripts/Control scripts/call_menu.gd<>uid://b6otphe00x05p::::res://scripts/Control scripts/update_menu.gd<>uid://ddxa0h1er0lig::::res://tscn/Control/settings.tscn<>uid://dyxin8vii6mtb::::res://scripts/Control scripts/menu_in_game.gd
+intro.tscn::PackedScene::4548588959551168889::1792618016::0::1::::<><><>0<>0<><>::uid://ddmwpwr36m238::::res://assets/intro/intro_final.png<>uid://dg58ywji6l0gy::::res://scripts/Control scripts/intro.gd<>uid://6gb5qutth1n3::::res://assets/Sounds/Music themes/pease.mp3<>uid://ciynek36q13kg::::res://assets/icons/next_icon.png
+menu.tscn::PackedScene::4858840994175916958::1792618016::0::1::::<><><>0<>0<><>::uid://eidwqp7uexu8::::res://scripts/Control scripts/menu.gd<>uid://drvtyqhf0wd21::::res://themes/MainTheme.tres
+settings.tscn::PackedScene::7417354323218218394::1792618016::0::1::::<><><>0<>0<><>::uid://drvtyqhf0wd21::::res://themes/MainTheme.tres<>uid://bbhvv5g546abb::::res://scripts/Control scripts/parametrs_settings.gd
+::res://tscn/Units/::1792750619
+random.tscn::PackedScene::5078099570346832333::1792618016::0::1::::<><><>0<>0<><>::uid://bfixae277om8b::::res://tscn/random.gd
+::res://tscn/Units/Enemy/::1792750619
+enemy_units.tscn::PackedScene::9010584580523708178::1792618016::0::1::::<><><>0<>0<><>::uid://seqe3iovmyu6::::res://scripts/Units/Enemis/enemyUnit.gd
+king.tscn::PackedScene::2737069523051612445::1792618016::0::1::::<><><>0<>0<><>::uid://seqe3iovmyu6::::res://scripts/Units/Enemis/enemyUnit.gd<>uid://s8fdww3gdhpy::::res://assets/units/enemis/king_boss.png<>uid://cqgcx53tceoc0::::res://assets/Player/pumpkin_guy_fire.png
+paladin.tscn::PackedScene::4453288609354288947::1792618016::0::1::::<><><>0<>0<><>::uid://seqe3iovmyu6::::res://scripts/Units/Enemis/enemyUnit.gd<>uid://djgdmw18u0dnq::::res://assets/units/enemis/paladin (2).png
+soldat.tscn::PackedScene::3333464377990881914::1792618016::0::1::::<><><>0<>0<><>::uid://seqe3iovmyu6::::res://scripts/Units/Enemis/enemyUnit.gd<>uid://b2wpp4116q25v::::res://assets/units/enemis/knight.png
+urban.tscn::PackedScene::5127173066916394496::1792618016::0::1::::<><><>0<>0<><>::uid://seqe3iovmyu6::::res://scripts/Units/Enemis/enemyUnit.gd<>uid://b3xbnteemsqf1::::res://assets/units/enemis/urban/villager(1).png
+villager.tscn::PackedScene::7267003635875147174::1792618016::0::1::::<><><>0<>0<><>::uid://seqe3iovmyu6::::res://scripts/Units/Enemis/enemyUnit.gd<>uid://qovodyrotemt::::res://assets/units/enemis/villager/villager_fork.png<>uid://decg40jj8supx::::res://assets/units/enemis/villager/villager_arm_left.png<>uid://bfixae277om8b::::res://tscn/random.gd<>uid://feikivyyrq4n::::res://assets/units/enemis/villager/villager_arm_right.png<>uid://c7a5jfpkreyr8::::res://assets/units/enemis/villager/villager.png
+::res://tscn/Units/Friend/::1792750619
+ghost.tscn::PackedScene::4586426882960743478::1792618016::0::1::::<><><>0<>0<><>::uid://w1ux4pxexebb::::res://scripts/Units/Friend/playerUnit.gd<>uid://cd0wcv67a4yup::::res://assets/units/friends/ghost/ghost_idle+attack.png<>uid://be2cvkqb7o3n8::::res://assets/Sounds/Sound effects/Coin01.mp3
+homunculus.tscn::PackedScene::8216174923673381396::1792618016::0::1::::<><><>0<>0<><>::uid://w1ux4pxexebb::::res://scripts/Units/Friend/playerUnit.gd<>uid://xw8km7hk7pl2::::res://assets/units/friends/homonculus/homonculus.png<>uid://c2dgaw3atyyuv::::res://assets/units/friends/homonculus/homonculus_left_arm.png<>uid://dqqlavcf6eitu::::res://assets/units/friends/homonculus/homonculus_right_arm.png<>uid://cflllb3676h2::::res://assets/units/friends/homonculus/homonculus_armour.png<>uid://bvlx47utjan8q::::res://assets/units/friends/homonculus/homonculus_right_arm_ no_axe.png<>uid://cel4s8b12on46::::res://tscn/Units/random.tscn<>uid://be2cvkqb7o3n8::::res://assets/Sounds/Sound effects/Coin01.mp3
+skeleton.tscn::PackedScene::5593684942061866837::1792618016::0::1::::<><><>0<>0<><>::uid://w1ux4pxexebb::::res://scripts/Units/Friend/playerUnit.gd<>uid://bap2napbbw63s::::res://assets/units/friends/Skeleton/skeleton_arm_left.png<>uid://n03gddxcbdxr::::res://tscn/Units/Projectiles/arrow.tscn<>uid://c4b3x0c2yk1fl::::res://assets/units/friends/Skeleton/skeleton.png<>uid://fj47vvn5i62n::::res://assets/units/friends/Skeleton/skeleton_arm_right.png<>uid://bne0hlwl82ekl::::res://assets/units/friends/Skeleton/skeleton_armor.png<>uid://be2cvkqb7o3n8::::res://assets/Sounds/Sound effects/Coin01.mp3
+skeleton_wizard.tscn::PackedScene::7362453827704518487::1792618016::0::1::::<><><>0<>0<><>::uid://w1ux4pxexebb::::res://scripts/Units/Friend/playerUnit.gd<>uid://bqru3tvbv1ll::::res://assets/units/friends/Skeleton wizard/skeleton_cape_arm_left (2).png<>uid://jnlkdqy2elrh::::res://assets/units/friends/Skeleton wizard/skeleton_cape.png<>uid://dbn3othahqj1q::::res://assets/units/friends/Skeleton wizard/skeleton_cape_arm_right (2).png<>uid://lxlrduk63mc1::::res://tscn/Units/Projectiles/fireball.tscn<>uid://be2cvkqb7o3n8::::res://assets/Sounds/Sound effects/Coin01.mp3
+unit.tscn::PackedScene::7553120087421075221::1792618016::0::1::::<><><>0<>0<><>::uid://w1ux4pxexebb::::res://scripts/Units/Friend/playerUnit.gd
+zombie.tscn::PackedScene::9096672995312275062::1792618016::0::1::::<><><>0<>0<><>::uid://w1ux4pxexebb::::res://scripts/Units/Friend/playerUnit.gd<>uid://be2cvkqb7o3n8::::res://assets/Sounds/Sound effects/Coin01.mp3<>uid://c3xbely7rvh40::::res://assets/units/friends/Zombie/zombe_arm_left.png<>uid://dbssvr0rkx74g::::res://assets/units/friends/Zombie/zombe_armor.png<>uid://stnhqj1vbdyg::::res://assets/weapons/sword.png<>uid://3s0y6h33f14g::::res://assets/units/friends/Zombie/zombe.png<>uid://y25h3o0evx28::::res://assets/weapons/club.png<>uid://bbfvqgn6k8uis::::res://assets/units/friends/Zombie/zombe_arm_right.png<>uid://bfixae277om8b::::res://tscn/random.gd
+::res://tscn/Units/Player/::1792750619
+player.tscn::PackedScene::5568825716449586578::1792618016::0::1::::<><><>0<>0<><>::uid://cp5n11sqtgyvp::::res://scripts/Player/player.gd<>uid://bd3u12jl3wb3g::::res://assets/Player/pumpkin_guy_body.png<>uid://d0vghsgvfned7::::res://tscn/Control/game_menu.tscn<>uid://kuylapm1ftvg::::res://assets/Player/pumpkin_guy.png<>uid://otbynoyn1pck::::res://assets/Player/pumpkin_guy_head.png<>uid://bjds7fph00f3f::::res://assets/Player/pumpkin_guy_lamp.png<>uid://cqgcx53tceoc0::::res://assets/Player/pumpkin_guy_fire.png
+::res://tscn/Units/Projectiles/::1792750619
+arrow.tscn::PackedScene::965775364959000435::1792618016::0::1::::<><><>0<>0<><>::uid://5kaf1ww2bbp8::::res://scripts/Projectile/fireball.gd<>uid://dkwglaqtnd32n::::res://assets/Projectiles/bow_and_arrow.png
+fireball.tscn::PackedScene::820256402741579294::1792618016::0::1::::<><><>0<>0<><>::uid://5kaf1ww2bbp8::::res://scripts/Projectile/fireball.gd<>uid://cq4knjv222tl::::res://assets/Projectiles/fireball_simple.png
+::res://tscn/Worlds/::1792750619
+gray_box.tscn::PackedScene::563300085023079720::1792618016::0::1::::<><><>0<>0<><>::uid://cj2b5skhibdoi::::res://scripts/gray_box.gd<>uid://cllt0mkg4ot7g::::res://tscn/Units/Player/player.tscn<>uid://bnq0w2888wbru::::res://tscn/Units/Enemy/soldat.tscn<>uid://be84euic5efcf::::res://tscn/Units/Enemy/king.tscn<>uid://b4phao0u6vmi2::::res://tscn/Units/Enemy/paladin.tscn
+map.tscn::PackedScene::94237419452676266::1792618016::0::1::::<><><>0<>0<><>::uid://bti3ljihetc1p::::res://assets/map.png<>uid://dgrnpvbbhoyew::::res://tscn/Worlds/maps/castle_1.tscn<>uid://bqfmxgpukbk4t::::res://tscn/Worlds/maps/City_1.tscn<>uid://calpnwwygnd15::::res://tscn/Worlds/Enters/castle.tscn<>uid://hoeei3dxy1ab::::res://tscn/Worlds/maps/village_1.tscn<>uid://dq4naagl0co4s::::res://tscn/Worlds/Enters/city.tscn<>uid://tg5xj4c1i8m4::::res://tscn/Worlds/Enters/village.tscn
+::res://tscn/Worlds/Enters/::1792750619
+castle.tscn::PackedScene::4796484683491504102::1792618016::0::1::::<><><>0<>0<><>::uid://dheim1feit1s0::::res://scripts/Control scripts/enter_to_location.gd
+city.tscn::PackedScene::8342939834863639204::1792618016::0::1::::<><><>0<>0<><>::uid://dheim1feit1s0::::res://scripts/Control scripts/enter_to_location.gd<>uid://ctv4sk1npsxjt::::res://assets/icons/map_building_icons.png
+village.tscn::PackedScene::1347837396325228441::1792618016::0::1::::<><><>0<>0<><>::uid://dheim1feit1s0::::res://scripts/Control scripts/enter_to_location.gd
+::res://tscn/Worlds/maps/::1792750619
+castle_1.tscn::PackedScene::7616306747131576510::1792618016::0::1::::<><><>0<>0<><>::uid://cas4ck47xt46p::::res://tscn/Worlds/maps/maps_end.gd<>uid://c7mj3h84qojho::::res://TileSets/new_tile_set.tres<>uid://bl6hcy68432sj::::res://TileSets/new_tile_set_2.tres<>uid://4lw4bvrojpql::::res://TileSets/new_tile_set_3.tres<>uid://byggtrftkcbuo::::res://assets/tilesets/tron.png<>uid://be84euic5efcf::::res://tscn/Units/Enemy/king.tscn<>uid://b4phao0u6vmi2::::res://tscn/Units/Enemy/paladin.tscn<>uid://cllt0mkg4ot7g::::res://tscn/Units/Player/player.tscn<>uid://bblqbgavequ5s::::res://assets/Sounds/Music themes/BossMain.mp3<>uid://bnq0w2888wbru::::res://tscn/Units/Enemy/soldat.tscn
+City_1.tscn::PackedScene::3520534087079219069::1792618016::0::1::::<><><>0<>0<><>::uid://cas4ck47xt46p::::res://tscn/Worlds/maps/maps_end.gd<>uid://bnq0w2888wbru::::res://tscn/Units/Enemy/soldat.tscn<>uid://c7mj3h84qojho::::res://TileSets/new_tile_set.tres<>uid://cllt0mkg4ot7g::::res://tscn/Units/Player/player.tscn<>uid://bl6hcy68432sj::::res://TileSets/new_tile_set_2.tres<>uid://cfbv151fc2pfc::::res://tscn/Units/Enemy/urban.tscn<>uid://4lw4bvrojpql::::res://TileSets/new_tile_set_3.tres<>uid://cmd4hngioj867::::res://assets/Sounds/Music themes/attack.mp3
+maps_end.gd::GDScript::4811765102855595497::1792618016::0::1::::Map_node<>Node2D<><>0<>0<><>::
+village_1.tscn::PackedScene::520473668779089145::1792618016::0::1::::<><><>0<>0<><>::uid://42knsxysni4i::::res://assets/tilesets/texture_atlas(2)(4)(2)(1).png<>uid://cas4ck47xt46p::::res://tscn/Worlds/maps/maps_end.gd<>uid://dbsgqukwiixnq::::res://tscn/Units/Enemy/villager.tscn<>uid://cfbv151fc2pfc::::res://tscn/Units/Enemy/urban.tscn<>uid://cllt0mkg4ot7g::::res://tscn/Units/Player/player.tscn<>uid://cmd4hngioj867::::res://assets/Sounds/Music themes/attack.mp3

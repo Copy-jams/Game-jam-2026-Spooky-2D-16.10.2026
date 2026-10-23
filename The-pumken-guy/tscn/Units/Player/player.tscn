@@ -629,6 +629,7 @@ frame_progress = 0.45496184
 position = Vector2(60, -63)
 node_a = NodePath("StaticBody2D")
 node_b = NodePath("Lantern")
+softness = 1.53
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Node2D/PinJoint2D" unique_id=1954207356]
 

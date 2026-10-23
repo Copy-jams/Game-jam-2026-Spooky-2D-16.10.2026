@@ -200,9 +200,8 @@ var amplitude = 10 # на сколько высоко прыгает юнит
 var period = 10 # как быстро прыгает юнит
 var max_rotation: float = 30 #максиматлный наклон при прышке
 func _handle_running_animation(_delta) -> void:
+	if texture_root == null: return
 	t += period * _delta
-	velocity.y = 300
-	global_position = Vector2.ZERO
 	if velocity == Vector2.ZERO: return
 	var offset = sin(t) * amplitude * velocity.length() / speed 
 	texture_root.position.y = -abs(offset)

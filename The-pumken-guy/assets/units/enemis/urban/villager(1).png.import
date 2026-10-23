@@ -3,15 +3,11 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3xbnteemsqf1"
-path="res://.godot/imported/villager(1).png-4e7f434982b818aec39c7ddd06451800.ctex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://assets/units/enemis/urban/villager(1).png"
-dest_files=["res://.godot/imported/villager(1).png-4e7f434982b818aec39c7ddd06451800.ctex"]
 
 [params]
 

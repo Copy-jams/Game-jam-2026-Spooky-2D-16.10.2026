@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://lxlrduk63mc1"]
+
+[ext_resource type="Script" uid="uid://5kaf1ww2bbp8" path="res://scripts/Projectile/fireball.gd" id="1_82ol4"]
+[ext_resource type="Texture2D" uid="uid://cq4knjv222tl" path="res://assets/Projectiles/fireball_simple.png" id="2_x3xrc"]
+
+[node name="Fireball" type="CharacterBody2D" unique_id=670331387 node_paths=PackedStringArray("projectile")]
+texture_filter = 1
+scale = Vector2(4, 4)
+script = ExtResource("1_82ol4")
+Speed = 600
+projectile = NodePath("Fireball")
+
+[node name="Fireball" type="Node2D" parent="." unique_id=836415532]
+scale = Vector2(0.8, 0.8)
+
+[node name="FireballSimple" type="Sprite2D" parent="Fireball" unique_id=272800013]
+rotation = 3.1415927
+scale = Vector2(1, 0.75)
+texture = ExtResource("2_x3xrc")

@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://cbhwnv5ikh1vu"]
+
+[ext_resource type="Script" uid="uid://eidwqp7uexu8" path="res://scripts/Control scripts/menu.gd" id="1_qkmnp"]
+[ext_resource type="Theme" uid="uid://drvtyqhf0wd21" path="res://themes/MainTheme.tres" id="2_7nk8k"]
+
+[node name="Menu" type="Control" unique_id=1192140349]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qkmnp")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1574314896]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.16206557, 0.1620656, 0.16206557, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1117905800]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -433.0
+offset_top = -156.0
+offset_right = -334.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer" unique_id=780284139]
+layout_mode = 2
+theme = ExtResource("2_7nk8k")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer" unique_id=1666988749]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=1545759473]
+layout_mode = 2
+text = "Pumkin guy"
+
+[node name="Start" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=2018688166]
+layout_mode = 2
+text = "Старт
+"
+
+[node name="Quit" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=632092394]
+layout_mode = 2
+text = "Выход"
+
+[node name="Graybox" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer" unique_id=922516350]
+visible = false
+layout_mode = 2
+text = "Грейбокс
+"
+
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/Graybox" to="." method="_on_graybox_pressed"]

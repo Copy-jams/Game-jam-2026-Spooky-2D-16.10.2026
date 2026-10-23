@@ -1,0 +1,455 @@
+[gd_scene format=3 uid="uid://d0vghsgvfned7"]
+
+[ext_resource type="Script" uid="uid://cymn70psp17wr" path="res://scripts/Control scripts/game_menu.gd" id="1_if0rf"]
+[ext_resource type="Script" uid="uid://dw0rv5ms5sbsj" path="res://scripts/Control scripts/res_mon.gd" id="1_q78ie"]
+[ext_resource type="Script" uid="uid://b0dld2v15a2oj" path="res://scripts/Control scripts/count_res.gd" id="1_tb7x4"]
+[ext_resource type="Theme" uid="uid://drvtyqhf0wd21" path="res://themes/MainTheme.tres" id="2_47use"]
+[ext_resource type="Script" uid="uid://ds1vjwht5glef" path="res://scripts/Control scripts/orders_menu.gd" id="4_niqn5"]
+[ext_resource type="Script" uid="uid://bqnvl7oic1ywg" path="res://scripts/Control scripts/call_menu.gd" id="5_x5yrj"]
+[ext_resource type="Script" uid="uid://b6otphe00x05p" path="res://scripts/Control scripts/update_menu.gd" id="6_372se"]
+[ext_resource type="PackedScene" uid="uid://ddxa0h1er0lig" path="res://tscn/Control/settings.tscn" id="8_fvy30"]
+[ext_resource type="Script" uid="uid://dyxin8vii6mtb" path="res://scripts/Control scripts/menu_in_game.gd" id="8_uc0uy"]
+
+[node name="GameMenu" type="Control" unique_id=1805027009]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_if0rf")
+
+[node name="ResMon" type="MenuBar" parent="." unique_id=1115772787]
+process_mode = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -236.0
+offset_top = -6.0
+offset_right = -236.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q78ie")
+
+[node name="PanelContainer" type="PanelContainer" parent="ResMon" unique_id=1567536692]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_47use")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ResMon/PanelContainer" unique_id=415234837]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="ResMon/PanelContainer/VBoxContainer" unique_id=1893393892]
+layout_mode = 2
+text = "Ресурсы"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ResMon/PanelContainer/VBoxContainer" unique_id=965179406]
+layout_mode = 2
+
+[node name="Type" type="VBoxContainer" parent="ResMon/PanelContainer/VBoxContainer/HBoxContainer" unique_id=365946689]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ResMon/PanelContainer/VBoxContainer/HBoxContainer/Type" unique_id=433320786]
+layout_mode = 2
+text = "Трупы:"
+
+[node name="Label2" type="Label" parent="ResMon/PanelContainer/VBoxContainer/HBoxContainer/Type" unique_id=341782901]
+layout_mode = 2
+text = "Души:"
+
+[node name="Label3" type="Label" parent="ResMon/PanelContainer/VBoxContainer/HBoxContainer/Type" unique_id=734335516]
+layout_mode = 2
+text = "Доспехи:"
+
+[node name="Label4" type="Label" parent="ResMon/PanelContainer/VBoxContainer/HBoxContainer/Type" unique_id=1289536140]
+layout_mode = 2
+text = "Оружие (ББ):"
+
+[node name="Label5" type="Label" parent="ResMon/PanelContainer/VBoxContainer/HBoxContainer/Type" unique_id=1328662720]
+layout_mode = 2
+text = "Оружие (ДБ):"
+
+[node name="Count" type="VBoxContainer" parent="ResMon/PanelContainer/VBoxContainer/HBoxContainer" unique_id=2126075346]
+layout_mode = 2
+script = ExtResource("1_tb7x4")
+
+[node name="corpses" type="Label" parent="ResMon/PanelContainer/VBoxContainer/HBoxContainer/Count" unique_id=246208664]
+layout_mode = 2
+text = "n"
+
+[node name="souls" type="Label" parent="ResMon/PanelContainer/VBoxContainer/HBoxContainer/Count" unique_id=1088986877]
+layout_mode = 2
+text = "n"
+
+[node name="armory" type="Label" parent="ResMon/PanelContainer/VBoxContainer/HBoxContainer/Count" unique_id=969810067]
+layout_mode = 2
+text = "n"
+
+[node name="Close_quarters_combat_weapon" type="Label" parent="ResMon/PanelContainer/VBoxContainer/HBoxContainer/Count" unique_id=1099495]
+layout_mode = 2
+text = "n"
+
+[node name="Ranged_combat_weapon" type="Label" parent="ResMon/PanelContainer/VBoxContainer/HBoxContainer/Count" unique_id=734848443]
+layout_mode = 2
+text = "n"
+
+[node name="OrdersMenu" type="MenuBar" parent="." unique_id=266776437]
+process_mode = 1
+layout_mode = 0
+offset_left = 22.0
+offset_top = 72.0
+offset_right = 62.0
+offset_bottom = 112.0
+script = ExtResource("4_niqn5")
+
+[node name="PanelContainer" type="PanelContainer" parent="OrdersMenu" unique_id=1257474095]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("2_47use")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="OrdersMenu/PanelContainer" unique_id=1563602289]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="OrdersMenu/PanelContainer/VBoxContainer" unique_id=478445408]
+layout_mode = 2
+text = "Приказы"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="OrdersMenu/PanelContainer/VBoxContainer" unique_id=1886883025]
+layout_mode = 2
+
+[node name="Attack" type="Button" parent="OrdersMenu/PanelContainer/VBoxContainer/VBoxContainer" unique_id=204530378]
+layout_mode = 2
+text = "Атаковать"
+
+[node name="HoldThePosition" type="Button" parent="OrdersMenu/PanelContainer/VBoxContainer/VBoxContainer" unique_id=1699770178]
+layout_mode = 2
+text = "Держать позицию"
+
+[node name="CallMenu" type="MenuBar" parent="." unique_id=1905755886]
+process_mode = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 140.0
+offset_top = -26.0
+offset_right = 140.0
+offset_bottom = -26.0
+grow_vertical = 2
+script = ExtResource("5_x5yrj")
+
+[node name="PanelContainer" type="PanelContainer" parent="CallMenu" unique_id=300228811]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_47use")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CallMenu/PanelContainer" unique_id=1735642789]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="CallMenu/PanelContainer/VBoxContainer" unique_id=612266272]
+layout_mode = 2
+text = "Призывы"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CallMenu/PanelContainer/VBoxContainer" unique_id=1137387912]
+layout_mode = 2
+
+[node name="Buttons" type="VBoxContainer" parent="CallMenu/PanelContainer/VBoxContainer/HBoxContainer" unique_id=2100574762]
+layout_mode = 2
+
+[node name="Ghost" type="Button" parent="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Buttons" unique_id=651710287]
+layout_mode = 2
+text = "Призрак"
+
+[node name="Zombie" type="Button" parent="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Buttons" unique_id=84742506]
+layout_mode = 2
+text = "Зомби"
+
+[node name="Skeleton" type="Button" parent="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Buttons" unique_id=1238145970]
+layout_mode = 2
+text = "Скелет"
+
+[node name="Homunculus" type="Button" parent="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Buttons" unique_id=1718018148]
+layout_mode = 2
+text = "Гомункл"
+
+[node name="SkeletonMage" type="Button" parent="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Buttons" unique_id=1124908349]
+layout_mode = 2
+text = "Скелет маг"
+
+[node name="Prise" type="VBoxContainer" parent="CallMenu/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1626670820]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Prise" unique_id=1192561580]
+layout_mode = 2
+size_flags_vertical = 10
+text = "1- душа"
+
+[node name="Label2" type="Label" parent="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Prise" unique_id=343685277]
+layout_mode = 2
+size_flags_vertical = 10
+text = "1-душа 1-труп"
+
+[node name="Label3" type="Label" parent="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Prise" unique_id=1173776853]
+layout_mode = 2
+size_flags_vertical = 10
+text = "1-труп"
+
+[node name="Label4" type="Label" parent="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Prise" unique_id=1416235349]
+layout_mode = 2
+size_flags_vertical = 10
+text = "3-души 5-трупов"
+
+[node name="Label5" type="Label" parent="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Prise" unique_id=100860039]
+layout_mode = 2
+size_flags_vertical = 10
+text = "5-душ 1-труп"
+
+[node name="UpdateMenu" type="MenuBar" parent="." unique_id=868434965]
+process_mode = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -399.0
+offset_top = 136.0
+offset_right = -359.0
+offset_bottom = 176.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6_372se")
+
+[node name="PanelContainer" type="PanelContainer" parent="UpdateMenu" unique_id=1382207046]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_47use")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UpdateMenu/PanelContainer" unique_id=1504903479]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="UpdateMenu/PanelContainer/VBoxContainer" unique_id=2040391251]
+layout_mode = 2
+text = "Улучшение"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UpdateMenu/PanelContainer/VBoxContainer" unique_id=1945057352]
+layout_mode = 2
+
+[node name="Armor" type="VBoxContainer" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1048348103]
+layout_mode = 2
+
+[node name="Armor zombie" type="Button" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/Armor" unique_id=2011780184]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Зомби"
+
+[node name="Armor skeleton" type="Button" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/Armor" unique_id=1630423217]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Скелет"
+
+[node name="Armor homuclus" type="Button" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/Armor" unique_id=913082132]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Гомункл"
+
+[node name="ArmorPrise" type="VBoxContainer" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer" unique_id=927300173]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/ArmorPrise" unique_id=1557746371]
+layout_mode = 2
+size_flags_vertical = 6
+text = "1-Доспех"
+vertical_alignment = 2
+
+[node name="Label2" type="Label" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/ArmorPrise" unique_id=283024083]
+layout_mode = 2
+size_flags_vertical = 6
+text = "1-Доспех"
+vertical_alignment = 2
+
+[node name="Label3" type="Label" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/ArmorPrise" unique_id=1696208472]
+layout_mode = 2
+size_flags_vertical = 6
+text = "3-Доспеха"
+vertical_alignment = 2
+
+[node name="Weapon" type="VBoxContainer" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer" unique_id=147158227]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Weapon zombie" type="Button" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/Weapon" unique_id=1241801687]
+layout_mode = 2
+size_flags_vertical = 2
+text = "Зомби"
+
+[node name="Weapon skeleton" type="Button" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/Weapon" unique_id=692258417]
+layout_mode = 2
+size_flags_vertical = 2
+text = "Скелет"
+
+[node name="WeaponPrise" type="VBoxContainer" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1762085098]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/WeaponPrise" unique_id=128456993]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+text = "1-Оружие(ББ)"
+
+[node name="Label3" type="Label" parent="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/WeaponPrise" unique_id=848920249]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+text = "1-Оружие(ДБ)"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2115666249]
+process_mode = 1
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = -48.0
+offset_right = -6.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Resources" type="Button" parent="HBoxContainer" unique_id=1393229647]
+layout_mode = 2
+text = "Ресурсы"
+
+[node name="Orders" type="Button" parent="HBoxContainer" unique_id=1245905470]
+layout_mode = 2
+text = "Приказы"
+
+[node name="Сall" type="Button" parent="HBoxContainer" unique_id=1507798881]
+layout_mode = 2
+text = "Призыв"
+
+[node name="Updates" type="Button" parent="HBoxContainer" unique_id=246236100]
+layout_mode = 2
+text = "Улучшения"
+
+[node name="menu" type="Button" parent="." unique_id=1584422326]
+layout_mode = 0
+offset_left = 1070.0
+offset_top = 21.0
+offset_right = 1126.0
+offset_bottom = 56.0
+text = "Меню"
+
+[node name="Menu" type="MenuBar" parent="." unique_id=1376168918]
+process_mode = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.26, 1.26)
+script = ExtResource("8_uc0uy")
+
+[node name="PanelContainer" type="PanelContainer" parent="Menu" unique_id=568297056]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_47use")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/PanelContainer" unique_id=1294129684]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/PanelContainer/VBoxContainer" unique_id=1232067300]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Меню"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Menu/PanelContainer/VBoxContainer" unique_id=845047964]
+layout_mode = 2
+text = "Продолжить"
+
+[node name="Button2" type="Button" parent="Menu/PanelContainer/VBoxContainer" unique_id=1512301305]
+layout_mode = 2
+text = "Настройки"
+
+[node name="Button3" type="Button" parent="Menu/PanelContainer/VBoxContainer" unique_id=1277418763]
+layout_mode = 2
+text = "Выйти в меню"
+
+[node name="Button4" type="Button" parent="Menu/PanelContainer/VBoxContainer" unique_id=638991871]
+layout_mode = 2
+text = "Выйти из игры"
+
+[node name="Settings" parent="Menu" unique_id=1191798465 instance=ExtResource("8_fvy30")]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -136.0
+offset_top = -231.74603
+offset_right = 136.0
+offset_bottom = -130.74603
+
+[connection signal="pressed" from="OrdersMenu/PanelContainer/VBoxContainer/VBoxContainer/Attack" to="OrdersMenu" method="_on_attack_pressed"]
+[connection signal="pressed" from="OrdersMenu/PanelContainer/VBoxContainer/VBoxContainer/HoldThePosition" to="OrdersMenu" method="_on_hold_the_position_pressed"]
+[connection signal="pressed" from="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Buttons/Ghost" to="CallMenu" method="_on_ghost_pressed"]
+[connection signal="pressed" from="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Buttons/Zombie" to="CallMenu" method="_on_zombie_pressed"]
+[connection signal="pressed" from="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Buttons/Skeleton" to="CallMenu" method="_on_skeleton_pressed"]
+[connection signal="pressed" from="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Buttons/Homunculus" to="CallMenu" method="_on_homunculus_pressed"]
+[connection signal="pressed" from="CallMenu/PanelContainer/VBoxContainer/HBoxContainer/Buttons/SkeletonMage" to="CallMenu" method="_on_skeleton_mage_pressed"]
+[connection signal="pressed" from="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/Armor/Armor zombie" to="UpdateMenu" method="_on_armor_zombie_pressed"]
+[connection signal="pressed" from="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/Armor/Armor skeleton" to="UpdateMenu" method="_on_armor_skeleton_pressed"]
+[connection signal="pressed" from="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/Armor/Armor homuclus" to="UpdateMenu" method="_on_armor_homuclus_pressed"]
+[connection signal="pressed" from="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/Weapon/Weapon zombie" to="UpdateMenu" method="_on_weapon_zombie_pressed"]
+[connection signal="pressed" from="UpdateMenu/PanelContainer/VBoxContainer/HBoxContainer/Weapon/Weapon skeleton" to="UpdateMenu" method="_on_weapon_skeleton_pressed"]
+[connection signal="pressed" from="HBoxContainer/Resources" to="ResMon" method="_on_resources_pressed"]
+[connection signal="pressed" from="HBoxContainer/Orders" to="OrdersMenu" method="_on_orders_pressed"]
+[connection signal="pressed" from="HBoxContainer/Сall" to="CallMenu" method="_on_сall_pressed"]
+[connection signal="pressed" from="HBoxContainer/Updates" to="UpdateMenu" method="_on_updates_pressed"]
+[connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="Menu/PanelContainer/VBoxContainer/Button" to="Menu" method="_on_button_pressed"]
+[connection signal="pressed" from="Menu/PanelContainer/VBoxContainer/Button2" to="Menu" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Menu/PanelContainer/VBoxContainer/Button3" to="Menu" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Menu/PanelContainer/VBoxContainer/Button4" to="Menu" method="_on_button_4_pressed"]

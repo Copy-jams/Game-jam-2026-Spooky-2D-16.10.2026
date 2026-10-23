@@ -1,0 +1,302 @@
+[gd_scene format=3 uid="uid://b4phao0u6vmi2"]
+
+[ext_resource type="Script" uid="uid://seqe3iovmyu6" path="res://scripts/Units/Enemis/enemyUnit.gd" id="1_36beu"]
+[ext_resource type="Texture2D" uid="uid://djgdmw18u0dnq" path="res://assets/units/enemis/paladin (2).png" id="2_1rhri"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x3mn2"]
+load_path = "res://.godot/imported/paladin (2).png-0ea8fce46f2db37d9feee90d3fc511ca.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xd07"]
+atlas = SubResource("CompressedTexture2D_x3mn2")
+region = Rect2(8, 11, 22, 27)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wjvgq"]
+load_path = "res://.godot/imported/paladin (2).png-0ea8fce46f2db37d9feee90d3fc511ca.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iwys4"]
+atlas = SubResource("CompressedTexture2D_wjvgq")
+region = Rect2(20, 69, 12, 5)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_61kx5"]
+load_path = "res://.godot/imported/paladin (2).png-0ea8fce46f2db37d9feee90d3fc511ca.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4jtl"]
+atlas = SubResource("CompressedTexture2D_61kx5")
+region = Rect2(76, 8, 12, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awai1"]
+atlas = ExtResource("2_1rhri")
+region = Rect2(62, 68, 7, 10)
+
+[sub_resource type="Animation" id="Animation_x3mn2"]
+resource_name = "attack"
+length = 1.2
+step = 0.016
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/ArmLeft:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.40000004, 0.55, 0.9, 1.1984127),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-1, -11.000001), Vector2(2, -12.596105), Vector2(-4, -12.596104), Vector2(-4, -12.596104), Vector2(-1, -11.000001)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/ArmRight:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.40000004, 0.9, 1.1984127),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.25, -10.75), Vector2(6.25, -12.596105), Vector2(3.7500002, -11.673053), Vector2(1.25, -10.75)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/ArmRight/Weapon:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.40000004, 0.55, 0.9, 1.1984127),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(10.25, 1.4038954), Vector2(13.240667, -2.3842664), Vector2(19.060707, 2.6342714), Vector2(13.7902565, 2.6590967), Vector2(10.25, 1.4038954)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/ArmRight/Weapon:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.40000004, 0.55, 0.9, 1.1984127),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.8251166, 0.86589813, 1.5360756, 1.0064988, 0.8251166]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D/ArmLeft:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.40000004, 0.55, 0.9, 1.1984127),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [-1.7680479, -2.383454, -1.2152402, -1.2152402, -1.7680479]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Node2D/ArmRight:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.40000004, 0.55, 0.9, 1, 1.1984127),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.6598191, 0.29144370000000003, 0.5358161, 0.29144370000000003, 0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Node2D/ArmRight/Weapon:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.55, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Node2D:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.40171745, 0.5485856, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -0.15389538), Vector2(-3.355, -0.304), Vector2(0, -0.15389538), Vector2(0, -0.15389538)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Node2D:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.40171745, 0.5485856, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.2443461, 0.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_1wg76"]
+resource_name = "idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/ArmRight:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1.25, -10.75), Vector2(1.25, -11.68), Vector2(1.25, -10.75)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/ArmLeft:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-1, -11.000001), Vector2(-1, -11.68), Vector2(-1, -11.000001)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D/ArmRight/Weapon:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(8.750001, 2.4038944)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/ArmRight/Weapon:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.8852977]
+}
+
+[sub_resource type="Animation" id="Animation_dce6p"]
+resource_name = "run"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D/ArmRight:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.25, -11.029684)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Node2D/ArmLeft:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, -11.204501)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.16666669, 0.39999998),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -4.645), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eab6c"]
+_data = {
+&"attack": SubResource("Animation_x3mn2"),
+&"idle": SubResource("Animation_1wg76"),
+&"run": SubResource("Animation_dce6p")
+}
+
+[node name="Paladin" type="CharacterBody2D" unique_id=1559666055 node_paths=PackedStringArray("navigationAgent", "targetPosition", "animation", "body_container")]
+texture_filter = 1
+position = Vector2(-3, -9)
+scale = Vector2(4, 4)
+script = ExtResource("1_36beu")
+health = 30.0
+speed = 300
+attackDamage = 5.0
+attackTimeout = 2.5
+protection = 3.5
+souls = 5
+armor = 5
+close_quarters_combat_weapon = 2
+ranged_combat_weapon = 2
+navigationAgent = NodePath("NavigationAgent2D")
+targetPosition = NodePath("Node/Marker2D")
+animation = NodePath("AnimationPlayer")
+body_container = NodePath("Node2D")
+metadata/_custom_type_script = "uid://seqe3iovmyu6"
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1470345500]
+position = Vector2(0, -3.6671925)
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=1651777127]
+position = Vector2(-2, -11.25)
+texture = SubResource("AtlasTexture_3xd07")
+
+[node name="ArmRight" type="Node2D" parent="Node2D" unique_id=998740727]
+position = Vector2(1.25, -10.75)
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/ArmRight" unique_id=1756020544]
+position = Vector2(4.5, -0.5)
+texture = SubResource("AtlasTexture_iwys4")
+
+[node name="Weapon" type="Node2D" parent="Node2D/ArmRight" unique_id=226000173]
+position = Vector2(8.750001, 2.4038944)
+rotation = 0.8852977
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/ArmRight/Weapon" unique_id=670865004]
+texture = SubResource("AtlasTexture_k4jtl")
+
+[node name="ArmLeft" type="Node2D" parent="Node2D" unique_id=2133300365]
+position = Vector2(-1, -11.000001)
+rotation = -1.7680479
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/ArmLeft" unique_id=1783577429]
+position = Vector2(-2, 3.25)
+texture = SubResource("AtlasTexture_awai1")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=775593194]
+
+[node name="Node" type="Node" parent="." unique_id=254552522]
+
+[node name="Marker2D" type="Marker2D" parent="Node" unique_id=1031157715]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1732429538]
+libraries/ = SubResource("AnimationLibrary_eab6c")
+autoplay = &"idle"

@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://ia4p8o4doomy"]
+
+[ext_resource type="Script" uid="uid://cj2b5skhibdoi" path="res://scripts/gray_box.gd" id="1_bnfco"]
+[ext_resource type="PackedScene" uid="uid://cllt0mkg4ot7g" path="res://tscn/Units/Player/player.tscn" id="1_gujfd"]
+[ext_resource type="PackedScene" uid="uid://bnq0w2888wbru" path="res://tscn/Units/Enemy/soldat.tscn" id="5_6x60w"]
+[ext_resource type="PackedScene" uid="uid://be84euic5efcf" path="res://tscn/Units/Enemy/king.tscn" id="5_kp5jn"]
+[ext_resource type="PackedScene" uid="uid://b4phao0u6vmi2" path="res://tscn/Units/Enemy/paladin.tscn" id="6_kp5jn"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_3xd07"]
+vertices = PackedVector2Array(1610, 1282, -1191, 1282, -1191, -1059, 1609, -1059)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-1201, -1069, 1619, -1069, 1620, 1292, -1201, 1292)])
+
+[sub_resource type="BoxMesh" id="BoxMesh_3xd07"]
+
+[node name="GrayBox" type="Node2D" unique_id=1582901387]
+y_sort_enabled = true
+script = ExtResource("1_bnfco")
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1477082700]
+navigation_polygon = SubResource("NavigationPolygon_3xd07")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="NavigationRegion2D" unique_id=1832250252]
+z_index = -1
+position = Vector2(39, 6)
+scale = Vector2(735, 492.99997)
+mesh = SubResource("BoxMesh_3xd07")
+
+[node name="Player" parent="." unique_id=796434290 instance=ExtResource("1_gujfd")]
+position = Vector2(540, -72)
+
+[node name="Paladin" parent="." unique_id=1559666055 instance=ExtResource("6_kp5jn")]
+position = Vector2(-339, -15)
+
+[node name="soldat" parent="." unique_id=1879916154 instance=ExtResource("5_6x60w")]
+position = Vector2(-171, -184)
+
+[node name="King" parent="." unique_id=363558696 instance=ExtResource("5_kp5jn")]
+position = Vector2(-208, 385)

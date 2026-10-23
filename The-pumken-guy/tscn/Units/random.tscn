@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cel4s8b12on46"]
+
+[ext_resource type="Script" uid="uid://bfixae277om8b" path="res://tscn/random.gd" id="1_m2ibl"]
+
+[node name="Random" type="Node" unique_id=1962896271]
+script = ExtResource("1_m2ibl")

@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://ddmwpwr36m238" path="res://assets/intro/intro_final.png" id="1_ottiv"]
 [ext_resource type="Script" uid="uid://dg58ywji6l0gy" path="res://scripts/Control scripts/intro.gd" id="2_qnomu"]
-[ext_resource type="Script" uid="uid://c0gffywdu4bmk" path="res://scripts/Control scripts/starting_music.gd" id="3_jap8j"]
 [ext_resource type="AudioStream" uid="uid://6gb5qutth1n3" path="res://assets/Sounds/Music themes/pease.mp3" id="4_401if"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jap8j"]
@@ -121,8 +120,6 @@ scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_3xd07")
 script = ExtResource("2_qnomu")
 
-[node name="StartingMusic" type="Node" parent="." unique_id=316504580]
-script = ExtResource("3_jap8j")
-Music = ExtResource("4_401if")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="StartingMusic" unique_id=1349713659]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1349713659]
+stream = ExtResource("4_401if")
+autoplay = true

@@ -2,6 +2,11 @@
 
 [ext_resource type="Script" uid="uid://eidwqp7uexu8" path="res://scripts/Control scripts/menu.gd" id="1_qkmnp"]
 [ext_resource type="Theme" uid="uid://drvtyqhf0wd21" path="res://themes/MainTheme.tres" id="2_7nk8k"]
+[ext_resource type="Texture2D" uid="uid://ddmwpwr36m238" path="res://assets/intro/intro_final.png" id="3_sa3km"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xd07"]
+atlas = ExtResource("3_sa3km")
+region = Rect2(0, 1080, 480, 270)
 
 [node name="Menu" type="Control" unique_id=1192140349]
 texture_filter = 1
@@ -62,6 +67,11 @@ visible = false
 layout_mode = 2
 text = "Грейбокс
 "
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=6065415]
+position = Vector2(712.5, 348.78125)
+scale = Vector2(1.3020834, 1.3020834)
+texture = SubResource("AtlasTexture_3xd07")
 
 [connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

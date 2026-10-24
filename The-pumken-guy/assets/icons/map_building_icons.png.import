@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctv4sk1npsxjt"
-valid=false
+uid="uid://eah105i5d203"
+path="res://.godot/imported/map_building_icons.png-e14b4fc29a0cad51676e5609f5a0e803.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/icons/map_building_icons.png"
+dest_files=["res://.godot/imported/map_building_icons.png-e14b4fc29a0cad51676e5609f5a0e803.ctex"]
 
 [params]
 

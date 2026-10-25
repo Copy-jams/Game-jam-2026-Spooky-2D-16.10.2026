@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://b6otphe00x05p" path="res://scripts/Control scripts/update_menu.gd" id="6_372se"]
 [ext_resource type="PackedScene" uid="uid://ddxa0h1er0lig" path="res://tscn/Control/settings.tscn" id="8_fvy30"]
 [ext_resource type="Script" uid="uid://dyxin8vii6mtb" path="res://scripts/Control scripts/menu_in_game.gd" id="8_uc0uy"]
+[ext_resource type="Script" uid="uid://c4f7tvnvrb6pi" path="res://scripts/Control scripts/limit.gd" id="10_oq7pa"]
 
 [node name="GameMenu" type="Control" unique_id=1805027009]
 process_mode = 3
@@ -431,6 +432,35 @@ offset_left = -136.0
 offset_top = -231.74603
 offset_right = 136.0
 offset_bottom = -130.74603
+
+[node name="Limit" type="MenuBar" parent="." unique_id=334588273]
+layout_mode = 0
+offset_left = 391.0
+offset_top = 601.0
+offset_right = 431.0
+offset_bottom = 641.0
+script = ExtResource("10_oq7pa")
+
+[node name="PanelContainer" type="PanelContainer" parent="Limit" unique_id=2071460072]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("2_47use")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Limit/PanelContainer" unique_id=2046225852]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Limit/PanelContainer/HBoxContainer" unique_id=1192251706]
+layout_mode = 2
+text = "0"
+
+[node name="Label2" type="Label" parent="Limit/PanelContainer/HBoxContainer" unique_id=239784537]
+layout_mode = 2
+text = "/"
+
+[node name="Label3" type="Label" parent="Limit/PanelContainer/HBoxContainer" unique_id=1037690023]
+layout_mode = 2
+text = "10"
 
 [connection signal="pressed" from="OrdersMenu/PanelContainer/VBoxContainer/VBoxContainer/Attack" to="OrdersMenu" method="_on_attack_pressed"]
 [connection signal="pressed" from="OrdersMenu/PanelContainer/VBoxContainer/VBoxContainer/HoldThePosition" to="OrdersMenu" method="_on_hold_the_position_pressed"]

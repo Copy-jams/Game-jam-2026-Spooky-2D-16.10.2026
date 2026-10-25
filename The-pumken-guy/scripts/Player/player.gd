@@ -7,6 +7,8 @@ var protection : float = 2.5
 
 func _ready() -> void:
 	PlayerData.player = self
+	OrdersTaker.CurrentGoal = "HoldThePosition"
+	OrdersTaker.PlayerUnits = []
 
 func _physics_process(delta: float) -> void:
 	if health <= 0:
